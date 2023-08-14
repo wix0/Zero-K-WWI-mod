@@ -7,3 +7,5 @@ and https://github.com/spring1944/spring1944/blob/master/docs/Credits.txt
 mamont nikita (a7v tank from sketchfab)
 bradacvojtech (mark IV tank from sketchfab)
 
+helijah from sketchfab for a lot of plane models
+

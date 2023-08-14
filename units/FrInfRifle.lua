@@ -1,7 +1,7 @@
-return { infbrrifle = {
-  unitname            = [[infbrrifle]],
-  name                = [[British Rifle Infantry]],
-  description         = [[British Rifle Infantry]],
+return { frinfrifle = {
+  unitname            = [[frinfrifle]],
+  name                = [[French Rifle Infantry]],
+  description         = [[French Rifle Infantry]],
   acceleration        = 0.3,
   --autoHeal            = 0.1,
   brakeRate           = 2.7,
@@ -49,7 +49,7 @@ return { infbrrifle = {
   movementClass          = [[KBOT2]],
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[britinf.dae]],
+  objectName          = [[frinf.dae]],
   script              = [[britinf.lua]],
   selfDestructAs      = [[BIG_UNITEX]],
 

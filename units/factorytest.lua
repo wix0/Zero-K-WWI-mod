@@ -11,9 +11,11 @@ return { factorytest = {
 
   buildoptions                  = {
   	[[testcon]],
-    [[tanka7v]],
-    [[tankmarkiv]],
-    [[infbrrifle]],
+    [[gertanka7v]],
+    [[brtankmarkiv]],
+    [[brinfrifle]],
+    [[gerinfrifle]],
+    [[frinfrifle]],
   },
 
   buildPic                      = [[factoryveh.png]],

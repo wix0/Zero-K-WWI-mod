@@ -1,5 +1,5 @@
-return { tankmarkiv = {
-  unitname            = [[tankmarkiv]],
+return { brtankmarkiv = {
+  unitname            = [[brtankmarkiv]],
   name                = [[Mark IV Tank]],
   description         = [[British Heavy Tank]],
   acceleration        = 0.144,

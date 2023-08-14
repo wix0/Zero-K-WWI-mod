@@ -7,7 +7,7 @@ local volumeOverrides = {
 
 local sounds = {
 	-- Misc
-	infbrrifle = {
+	brinfrifle = {
 		ok = {
 			volume = 0.56,
 			[1] = "US_GEN_OK1",
@@ -24,7 +24,39 @@ local sounds = {
 			[5] = "US_GEN_Select5",
 		},
 	},
-	tanka7v = {
+	frinfrifle = {
+		ok = {
+			volume = 0.56,
+			[1] = "US_GEN_OK1",
+			[2] = "US_GEN_OK2",
+			[3] = "US_GEN_OK3",
+			[4] = "US_GEN_OK4",
+		},
+		select = {
+			volume = 1,
+			[1] = "US_GEN_Select1",
+			[2] = "US_GEN_Select2",
+			[3] = "US_GEN_Select3",
+			[4] = "US_GEN_Select4",
+			[5] = "US_GEN_Select5",
+		},
+	},
+	gerinfrifle = {
+		ok = {
+			volume = 0.56,
+			[1] = "GER_GEN_OK1",
+			[2] = "GER_GEN_OK2",
+			[3] = "GER_GEN_OK3",
+			[4] = "GER_GEN_OK4",
+		},
+		select = {
+			volume = 1,
+			[1] = "GER_GEN_Select1",
+			[2] = "GER_GEN_Select2",
+			[3] = "GER_GEN_Select3",
+		},
+	},
+	gertanka7v = {
 		ok = {
 			volume = 0.56,
 			[1] = "light_tank_move2",
@@ -34,7 +66,7 @@ local sounds = {
 			[1] = "vehicle_select2",
 		},
 	},
-	tankmarkiv = {
+	brtankmarkiv = {
 		ok = {
 			volume = 0.56,
 			[1] = "light_tank_move2",

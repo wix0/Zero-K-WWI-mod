@@ -1,5 +1,5 @@
-return { tanka7v = {
-  unitname            = [[tanka7v]],
+return { gertanka7v = {
+  unitname            = [[gertanka7v]],
   name                = [[A7V Tank]],
   description         = [[German Heavy Tank]],
   acceleration        = 0.144,
