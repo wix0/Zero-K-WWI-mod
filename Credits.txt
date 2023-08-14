@@ -1,0 +1,9 @@
+Thanks to the following people for assets/code etc
+
+some assets from spring 1944 game either Creative Commons BY-NC 3.0 license.or GPL 
+for further info check: https://github.com/spring1944/spring1944/blob/master/docs/License.txt
+and https://github.com/spring1944/spring1944/blob/master/docs/Credits.txt
+
+mamont nikita (a7v tank from sketchfab)
+bradacvojtech (mark IV tank from sketchfab)
+
