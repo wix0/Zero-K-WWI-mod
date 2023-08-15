@@ -10,12 +10,14 @@ return { factorytest = {
   buildingGroundDecalType       = [[factoryveh_aoplane.dds]],
 
   buildoptions                  = {
-  	[[testcon]],
+  	[[brengineer]],
     [[gertanka7v]],
     [[brtankmarkiv]],
     [[brinfrifle]],
     [[gerinfrifle]],
     [[frinfrifle]],
+    [[gerplanefokker]],
+    [[gunshipheavytrans]],
   },
 
   buildPic                      = [[factoryveh.png]],
@@ -34,6 +36,8 @@ return { factorytest = {
     ploppable = 1,
     sortName       = [[2]],
     default_spacing = 8,
+    landflystate   = [[0]],
+    factory_land_state = 1,
 
     solid_factory  = 3,
     aimposoffset   = [[0 0 -35]],

@@ -36,7 +36,6 @@ return { gerinfrifle = {
     outline_yoff = 13.5,
   },
 
-  explodeAs              = [[SMALL_UNITEX]],
   footprintX             = 2,
   footprintZ             = 2,
   iconType               = [[kbotraider]],
@@ -50,8 +49,7 @@ return { gerinfrifle = {
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
   objectName          = [[gerinf.dae]],
-  script              = [[britinf.lua]],
-  selfDestructAs      = [[BIG_UNITEX]],
+  script              = [[InfantryRifle.lua]],
 
   sfxtypes            = {
 
@@ -134,27 +132,6 @@ return { gerinfrifle = {
       waterbounce             = 1,
       weaponType              = [[Cannon]],
       weaponVelocity          = 2200,
-    },
-
-  },
-
-
-
-  featureDefs            = {
-
-    DEAD  = {
-      blocking         = false,
-      featureDead      = [[HEAP]],
-      footprintX       = 2,
-      footprintZ       = 2,
-      object           = [[spherebot_dead.s3o]],
-    },
-
-    HEAP  = {
-      blocking         = false,
-      footprintX       = 2,
-      footprintZ       = 2,
-      object           = [[debris2x2b.s3o]],
     },
 
   },

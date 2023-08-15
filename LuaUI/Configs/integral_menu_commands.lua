@@ -112,12 +112,13 @@ local unitTypes = {
 
 local factoryUnitPosDef = {
 	factorytest = {
-		testcon            = unitTypes.CONSTRUCTOR,
+		brengineer            = unitTypes.CONSTRUCTOR,
 		gertanka7v            = unitTypes.ASSAULT,
 		brtankmarkiv            = unitTypes.ANTI_AIR,
 		brinfrifle            = unitTypes.RAIDER,
 		gerinfrifle            = unitTypes.SKIRMISHER,
 		frinfrifle            = unitTypes.RIOT,
+		gerplanefokker            = unitTypes.WEIRD_RAIDER,
 	},
 	factorycloak = {
 		cloakcon          = unitTypes.CONSTRUCTOR,

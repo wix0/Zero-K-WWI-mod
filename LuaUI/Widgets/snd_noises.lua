@@ -47,6 +47,14 @@ local toleranceTime = Spring.GetConfigInt('DoubleClickTime', 300) * 0.001 -- no 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
+function selectSound(soundTable)
+	if soundTable then
+		return soundTable[math.floor(math.random() * (#soundTable - 1) + 1.5)]
+	else
+		return nil
+	end
+end
+
 options_path = 'Settings/Audio'
 options_order = {
 'selectnoisevolume','ordernoisevolume','attacknoisevolume', 'commandSoundCooldown', 'selectSoundCooldown',
@@ -161,11 +169,10 @@ function widget:SelectionChanged(selection, subselection)
 		return
 	end
 	
-	local sound = sounds.select[math.floor(math.random() * (#sounds.select - 1) + 1.5)]
+	local sound = selectSound(sounds.select)
 	if not sound then
 		return
 	end
-
 	CoolNoisePlay(sound, options.selectSoundCooldown.value, (sounds.select.volume or 1)*options.selectnoisevolume.value)
 end
 
@@ -182,13 +189,16 @@ function WG.sounds_gaveOrderToUnit(unitID, isBuild)
 
 	if not isBuild then
 		if sounds.ok then
-			local sound = sounds.ok[math.floor(math.random() * (#sounds.ok - 1) + 1.5)]
+			local sound = selectSound(sounds.ok)
 			if sound then
 				CoolNoisePlay(sound, options.commandSoundCooldown.value, (sounds.ok.volume or 1)*options.ordernoisevolume.value)
 			end
 		end
 	elseif sounds.build then
-		CoolNoisePlay(sounds.build[1], options.commandSoundCooldown.value, options.ordernoisevolume.value)
+		local sound = selectSound(sounds.build)
+		if sound then
+			CoolNoisePlay(sound, options.commandSoundCooldown.value, options.ordernoisevolume.value)
+		end
 	end
 end
 
@@ -204,13 +214,16 @@ local function PlayResponse(unitID, cmdID)
 	local sounds = soundTable[unitDefID]
 	if cmdID and (CMD[cmdID] or widgetCMD[cmdID] or cmdID > 0) then
 		if (sounds and sounds.ok) then
-			local sound = sounds.ok[math.floor(math.random() * (#sounds.ok - 1) + 1.5)]
+			local sound = selectSound(sounds.ok)
 			if sound then
 				CoolNoisePlay(sound, options.commandSoundCooldown.value, (sounds.ok.volume or 1)*options.ordernoisevolume.value)
 			end
 		end
 	elseif (sounds and sounds.build) then
-		CoolNoisePlay(sounds.build[1], options.commandSoundCooldown.value, options.ordernoisevolume.value)
+		local sound = selectSound(sounds.build)
+		if sound then
+			CoolNoisePlay(sound, options.commandSoundCooldown.value, options.ordernoisevolume.value)
+		end
 	end
 end
 

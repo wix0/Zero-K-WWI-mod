@@ -54,27 +54,54 @@ local inBuildAnim = false
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 local function BuildPose(heading, pitch)
-	inBuildAnim = true
-	Turn(luparm, x_axis, math.rad(-60), math.rad(250))
-	Turn(luparm, y_axis, math.rad(-15), math.rad(250))
+	Turn(torso, x_axis, math.rad(5), math.rad(250))
+	Turn(torso, y_axis, 0, math.rad(250))
+	Turn(torso, z_axis, 0, math.rad(250))
+	--head
+	Turn(head, x_axis, 0, math.rad(250))
+	Turn(head, y_axis, 0, math.rad(250))
+	Turn(head, z_axis, 0, math.rad(250))
+	--rarm
+	Turn(ruparm, x_axis, math.rad(-55), math.rad(250))
+	Turn(ruparm, y_axis, 0, math.rad(250))
+	Turn(ruparm, z_axis, 0, math.rad(250))
+	
+	Turn(rarm, x_axis, math.rad(13), math.rad(250))
+	Turn(rarm, y_axis, math.rad(46), math.rad(250))
+	Turn(rarm, z_axis, math.rad(9), math.rad(250))
+	
+	Turn(rloarm, x_axis, math.rad(16), math.rad(250))
+	Turn(rloarm, y_axis, math.rad(-23), math.rad(250))
+	Turn(rloarm, z_axis, math.rad(11), math.rad(250))
+	
+	Turn(gun, x_axis, math.rad(17.0), math.rad(250))
+	Turn(gun, y_axis, math.rad(-19.8), math.rad(250)) ---20 is dead straight
+	Turn(gun, z_axis, math.rad(2.0), math.rad(250))
+	--larm
+	Turn(luparm, x_axis, math.rad(-70), math.rad(250))
+	Turn(luparm, y_axis, math.rad(-20), math.rad(250))
 	Turn(luparm, z_axis, math.rad(-10), math.rad(250))
 	
-	Turn(larm, x_axis, math.rad(5), math.rad(250))
-	Turn(larm, y_axis, math.rad(30), math.rad(250))
-	Turn(larm, z_axis, math.rad(-5), math.rad(250))
+	Turn(larm, x_axis, math.rad(-13), math.rad(250))
+	Turn(larm, y_axis, math.rad(-60), math.rad(250))
+	Turn(larm, z_axis, math.rad(9), math.rad(250))
 	
-	Turn(lloarm, y_axis, math.rad(-37), math.rad(250))
-	Turn(lloarm, z_axis, math.rad(-75), math.rad(450))
-	Turn(gunpod, y_axis, math.rad(90), math.rad(350))
+	Turn(lloarm, x_axis, math.rad(73), math.rad(250))
+	Turn(lloarm, y_axis, math.rad(19), math.rad(250))
+	Turn(lloarm, z_axis, math.rad(58), math.rad(250))
 	
+	--aim
 	Turn(turret, y_axis, heading, math.rad(350))
-	Turn(lloarm, x_axis, -pitch, math.rad(250))
+	Turn(armhold, x_axis, -pitch, math.rad(250))
+	WaitForTurn(turret, y_axis)
+	WaitForTurn(armhold, x_axis) --need to make sure not
+	WaitForTurn(lloarm, x_axis) --stil setting up
 end
 
 local function RestoreAfterDelay()
 	Signal(SIG_RESTORE)
 	SetSignalMask(SIG_RESTORE)
-	Sleep(6000)
+	Sleep(4000)
 	if not dead then
 		if GetUnitValue(COB.INBUILDSTANCE) == 1 then
 			BuildPose(restoreHeading, restorePitch)
@@ -329,8 +356,7 @@ function script.Create()
 
 	StartThread(MotionControl)
 	StartThread(RestoreAfterDelay)
-	StartThread(GG.Script.SmokeUnit, unitID, smokePiece)
-	Spring.SetUnitNanoPieces(unitID, nanoPieces)
+	--Spring.SetUnitNanoPieces(unitID, nanoPieces)
 end
 
 function script.StartMoving()
@@ -346,13 +372,10 @@ function script.AimFromWeapon(num)
 end
 
 function script.QueryWeapon(num)
-	if num == 2 or num == 4 then
-		return pelvis
-	end
 	return flare
 end
 
-local function AimRifle(heading, pitch, isDgun)
+local function AimRifle(heading, pitch)
 	--torso
 	Turn(torso, x_axis, math.rad(5), math.rad(250))
 	Turn(torso, y_axis, 0, math.rad(250))
@@ -412,7 +435,7 @@ function script.AimWeapon(num, heading, pitch)
 		Signal(SIG_AIM_2)
 		SetSignalMask(SIG_AIM_2)
 		bAiming = true
-		return AimRifle(heading, pitch, canDgun)
+		return AimRifle(heading, pitch)
 	elseif num == 2 or num == 4 then
 		Sleep(100)
 		return (shieldOn)
@@ -464,51 +487,18 @@ function script.StartBuilding(heading, pitch)
 end
 
 function script.Killed(recentDamage, maxHealth)
-	local severity = recentDamage/maxHealth
+	--local severity = recentDamage/maxHealth
 	dead = 1
-	--Turn(turret, y_axis, 0, math.rad(500))
-	if severity <= .5 then
-	
-		Turn(base, x_axis, math.rad(79), math.rad(80))
-		Turn(rloleg, x_axis, math.rad(25), math.rad(250))
-		Turn(lupleg, x_axis, math.rad(7), math.rad(250))
-		Turn(lupleg, y_axis, math.rad(34), math.rad(250))
-		Turn(lupleg, z_axis, math.rad(-(-9)), math.rad(250))
-		Sleep(200) --give time to fall
-		Turn(luparm, y_axis, math.rad(18), math.rad(350))
-		Turn(luparm, z_axis, math.rad(-(-45)), math.rad(350))
-		Sleep(650)
-		--EmitSfx(turret, 1026) --impact
-
-		Sleep(100)
---[[
-		Explode(gun)
-		Explode(head)
-		Explode(pelvis)
-		Explode(lloarm)
-		Explode(luparm)
-		Explode(lloleg)
-		Explode(lupleg)
-		Explode(rloarm)
-		Explode(rloleg)
-		Explode(ruparm)
-		Explode(rupleg)
-		Explode(torso)
-]]--
-		return 1
-	else
-		Explode(gun, SFX.FALL + SFX.FIRE + SFX.SMOKE + SFX.EXPLODE)
-		Explode(head, SFX.FALL + SFX.FIRE + SFX.SMOKE + SFX.EXPLODE)
-		Explode(pelvis, SFX.FALL + SFX.FIRE + SFX.SMOKE + SFX.EXPLODE)
-		Explode(lloarm, SFX.FALL + SFX.FIRE + SFX.SMOKE + SFX.EXPLODE)
-		Explode(luparm, SFX.FALL + SFX.FIRE + SFX.SMOKE + SFX.EXPLODE)
-		Explode(lloleg, SFX.FALL + SFX.FIRE + SFX.SMOKE + SFX.EXPLODE)
-		Explode(lupleg, SFX.FALL + SFX.FIRE + SFX.SMOKE + SFX.EXPLODE)
-		Explode(rloarm, SFX.FALL + SFX.FIRE + SFX.SMOKE + SFX.EXPLODE)
-		Explode(rloleg, SFX.FALL + SFX.FIRE + SFX.SMOKE + SFX.EXPLODE)
-		Explode(ruparm, SFX.FALL + SFX.FIRE + SFX.SMOKE + SFX.EXPLODE)
-		Explode(rupleg, SFX.FALL + SFX.FIRE + SFX.SMOKE + SFX.EXPLODE)
-		Explode(torso, SFX.SHATTER + SFX.EXPLODE)
-		return 2
-	end
+	Turn(base, x_axis, math.rad(79), math.rad(80))
+	Turn(rloleg, x_axis, math.rad(25), math.rad(250))
+	Turn(lupleg, x_axis, math.rad(7), math.rad(250))
+	Turn(lupleg, y_axis, math.rad(34), math.rad(250))
+	Turn(lupleg, z_axis, math.rad(-(-9)), math.rad(250))
+	Sleep(200)
+	Turn(luparm, y_axis, math.rad(18), math.rad(350))
+	Turn(luparm, z_axis, math.rad(-(-45)), math.rad(350))
+	Sleep(650)
+	--EmitSfx(turret, 1026) --impact
+	Sleep(100)
+	return 1
 end
