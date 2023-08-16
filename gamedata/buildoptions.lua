@@ -1,4 +1,5 @@
 local buildOpts = {
+	[[pillbox]],
 	[[factorytest]],
 	[[staticmex]],
 	[[energysolar]],

@@ -4,8 +4,15 @@ some assets from spring 1944 game either Creative Commons BY-NC 3.0 license.or G
 for further info check: https://github.com/spring1944/spring1944/blob/master/docs/License.txt
 and https://github.com/spring1944/spring1944/blob/master/docs/Credits.txt
 
-mamont nikita (a7v tank from sketchfab)
-bradacvojtech (mark IV tank from sketchfab)
 
-helijah from sketchfab for a lot of plane models
+helijah from sketchfab for airplane models licensed under Creative Commons Attribution
+
+
+mamont nikita (a7v tank from sketchfab) is licensed under Creative Commons Attribution
+bradacvojtech (mark IV tank from sketchfab) is licensed under Creative Commons Attribution
+"Pillbox Hornchurch Country Park 2" (https://skfb.ly/oqYsY) by artfletch is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+
+
+Fort Carré - Antibes, France by Azad Balabanian is licensed under Creative Commons Attribution
 

@@ -59,12 +59,6 @@ end
 
 local WING_DISTANCE = 8
 
-local function activate()
-end
-
-local function deactivate()
-end
-
 function script.Create()
 	--Spin(rotor, y_axis, math.rad(2000))
 	--StartThread(MotionControl)
@@ -74,13 +68,11 @@ end
 function script.StartMoving()
 	Spin(rotor, y_axis, 30, 1)
 	isMoving = true
-	activate()
 end
 
 function script.StopMoving()
 	StopSpin(rotor, y_axis, 0.5)
 	isMoving = false
-	deactivate()
 end
 
 function script.QueryWeapon(num)

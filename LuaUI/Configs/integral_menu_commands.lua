@@ -119,6 +119,7 @@ local factoryUnitPosDef = {
 		gerinfrifle            = unitTypes.SKIRMISHER,
 		frinfrifle            = unitTypes.RIOT,
 		gerplanefokker            = unitTypes.WEIRD_RAIDER,
+		gunshipheavytrans            = unitTypes.HEAVY_SOMETHING,
 	},
 	factorycloak = {
 		cloakcon          = unitTypes.CONSTRUCTOR,
@@ -336,6 +337,7 @@ local defense_commands = {
 	turretheavy       = {order = 16, row = 3, col = 3},
 	turretantiheavy   = {order = 17, row = 3, col = 4},
 	staticshield      = {order = 18, row = 3, col = 5},
+	pillbox      	  = {order = 19, row = 3, col = 6},
 }
 
 local special_commands = {
