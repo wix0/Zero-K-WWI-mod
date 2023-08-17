@@ -33,4 +33,25 @@ units:
 ge fr br light armored veh
 fr tank
 all flamethrower (maybe no br)
+AA artilery
+obs balloons
+zeppelin
+ships
+subs
+mortars
+artilery
+AT guns
+suppy truck
 
+
+art:
+add back barbed wire to trench as texture
+builder anims
+starfort anims
+texturework on trench
+
+
+
+ideas:
+light vehicles can machinegun air for a bit less dmg than bunkers?
+maybe scale up soldiers and pillbox and tanks so the moveclass will be ok
