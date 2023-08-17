@@ -331,14 +331,14 @@ local defense_commands = {
 	turretaaflak      = {order = 11, row = 2, col = 3},
 	turretaafar       = {order = 12, row = 2, col = 4},
 	turretaaheavy     = {order = 13, row = 2, col = 5},
+	trench      	  = {order = 20, row = 2, col = 6},
 
 	turretimpulse     = {order = 4, row = 3, col = 1},
 	turrettorp        = {order = 14, row = 3, col = 2},
 	turretheavy       = {order = 16, row = 3, col = 3},
 	turretantiheavy   = {order = 17, row = 3, col = 4},
-	staticshield      = {order = 18, row = 3, col = 5},
+	starfort          = {order = 18, row = 3, col = 5},
 	pillbox      	  = {order = 19, row = 3, col = 6},
-	trench      	  = {order = 20, row = 2, col = 6},
 }
 
 local special_commands = {

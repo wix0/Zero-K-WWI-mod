@@ -1,5 +1,6 @@
 local buildOpts = {
 	[[trench]],
+	[[starfort]],
 	[[pillbox]],
 	[[factorytest]],
 	[[staticmex]],
