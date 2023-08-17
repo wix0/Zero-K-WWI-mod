@@ -338,6 +338,7 @@ local defense_commands = {
 	turretantiheavy   = {order = 17, row = 3, col = 4},
 	staticshield      = {order = 18, row = 3, col = 5},
 	pillbox      	  = {order = 19, row = 3, col = 6},
+	trench      	  = {order = 20, row = 2, col = 6},
 }
 
 local special_commands = {

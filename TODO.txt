@@ -1,0 +1,36 @@
+
+technology research (wix)
+oil (enig) use metal?
+
+armordefs
+which ones we need? airplane, balloon, maybe zeppelin too, , zombie, zombie flier,
+infantry, heavyinfantry, heavy vehicle, light vehicle, building, fortified building
+
+ship
+new propo:
+unarmored
+light
+medium
+heavy
+fortified
+need air heavy / light too because want some units to not treat air as tanks
+
+
+auras maybe thick in some intervals
+
+
+buildings:
+oil well geothermal but with metal so we can use repair energy factor?
+headquarters/barracks?
+airfield
+shipyard
+tank factory
+research center
+war factory
+
+
+units:
+ge fr br light armored veh
+fr tank
+all flamethrower (maybe no br)
+

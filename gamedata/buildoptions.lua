@@ -1,4 +1,5 @@
 local buildOpts = {
+	[[trench]],
 	[[pillbox]],
 	[[factorytest]],
 	[[staticmex]],
