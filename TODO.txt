@@ -26,7 +26,8 @@ airfield
 shipyard
 tank factory
 research center
-war factory
+war factory(income)
+houses (lower income)
 
 
 units:
@@ -36,12 +37,11 @@ all flamethrower (maybe no br)
 AA artilery
 obs balloons
 zeppelin
-ships
-subs
 mortars
 artilery
 AT guns
 suppy truck
+ships: transport, destroyer, battleship, dreadnought, sub, AA frigate
 
 
 art:

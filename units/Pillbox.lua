@@ -70,6 +70,7 @@ return { pillbox = {
       alphaDecay              = 0.7,
       areaOfEffect            = 20,
       avoidFeature            = false,
+      burnblow                = true,
       craterBoost             = 0.15,
       craterMult              = 0.3,
       --collideFriendly         = false,

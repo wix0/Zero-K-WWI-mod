@@ -89,6 +89,7 @@ return { gerplanefokker = {
       areaOfEffect            = 20,
       avoidFeature            = false,
       collideFriendly         = false,
+      burnblow                = true,
       craterBoost             = 0,
       craterMult              = 0,
 

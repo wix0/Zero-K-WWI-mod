@@ -1,5 +1,5 @@
 return { hangar = {
-  name                          = [[Hangar]],
+  name                          = [[Airdome]],
   description                   = [[Produces planes]],
   buildCostMetal                = 10,
   buildDistance                 = Shared.FACTORY_PLATE_RANGE,
@@ -7,7 +7,6 @@ return { hangar = {
   buildingGroundDecalDecaySpeed = 30,
   buildingGroundDecalSizeX      = 11,
   buildingGroundDecalSizeY      = 11,
-  buildingGroundDecalType       = [[factoryveh_aoplane.dds]],
 
   buildoptions                  = {
     [[gerplanefokker]],
@@ -52,19 +51,18 @@ return { hangar = {
   footprintX                    = 8,
   footprintZ                    = 8,
   iconType                      = [[facvehicle]],
-  levelGround                   = false,
+  levelGround                   = true,
   maxDamage                     = 4000,
   maxSlope                      = 15,
   maxVelocity                   = 0,
   maxWaterDepth                 = 0,
   moveState                     = 1,
   noAutoFire                    = false,
-  objectName                    = [[factoryveh.dae]],
-  script                        = [[factorytest.lua]],
+  objectName                    = [[barracks.dae]],
+  script                        = [[barracks.lua]],
   selfDestructAs                = [[LARGE_BUILDINGEX]],
   showNanoSpray                 = false,
   sightDistance                 = 273,
-  useBuildingGroundDecal        = true,
   workerTime                    = Shared.FACTORY_BUILDPOWER,
   yardMap                       = "oooooooo oooooooo oooooooo yccccccy yccccccy yccccccy yccccccy yccccccy",
 

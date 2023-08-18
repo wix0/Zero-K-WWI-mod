@@ -90,6 +90,7 @@ return { frinfrifle = {
       alphaDecay              = 0.75,
       areaOfEffect            = 1,
       avoidfeature            = false,
+      burnblow                = true,
       bouncerebound           = 0.15,
       bounceslip              = 1,
       --cegTag                  = [[gauss_tag_l]],

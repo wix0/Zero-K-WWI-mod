@@ -1,5 +1,5 @@
 return { tankfactory = {
-  name                          = [[Tank factory]],
+  name                          = [[War factory]],
   description                   = [[Produces tanks]],
   buildCostMetal                = 10,
   buildDistance                 = Shared.FACTORY_PLATE_RANGE,
@@ -57,8 +57,8 @@ return { tankfactory = {
   maxWaterDepth                 = 0,
   moveState                     = 1,
   noAutoFire                    = false,
-  objectName                    = [[factoryveh.dae]],
-  script                        = [[factorytest.lua]],
+  objectName                    = [[wwtankfactory.dae]],
+  script                        = [[barracks.lua]],
   selfDestructAs                = [[LARGE_BUILDINGEX]],
   showNanoSpray                 = false,
   sightDistance                 = 273,
