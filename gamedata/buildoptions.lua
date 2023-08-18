@@ -1,4 +1,5 @@
 local buildOpts = {
+	[[shipfactory]],
 	[[trench]],
 	[[starfort]],
 	[[pillbox]],

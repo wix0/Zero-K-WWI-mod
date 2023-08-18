@@ -101,6 +101,16 @@ local sounds = {
 			[1] = "vehicle_select2",
 		},
 	},
+	artillery = {
+		ok = {
+			volume = 0.56,
+			[1] = "light_tank_move2",
+		},
+		select = {
+			volume = 1,
+			[1] = "vehicle_select2",
+		},
+	},
 	staticrearm = {
 		select = {
 			[1] = "building_select1",

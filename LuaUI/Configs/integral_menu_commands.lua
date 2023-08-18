@@ -119,9 +119,13 @@ local factoryUnitPosDef = {
 	tankfactory = {
 		gertanka7v            = unitTypes._1x1,
 		brtankmarkiv          = unitTypes._1x2,
+		artillery             = unitTypes._1x3
 	},
 	hangar = {
 		gerplanefokker        = unitTypes._1x1,
+	},
+	shipfactory = {
+		placeholdership        = unitTypes._1x1,
 	},
 	factorycloak = {
 		cloakcon          = unitTypes._1x1,
@@ -307,6 +311,7 @@ local factory_commands = {
 	barracks          = {order = 14, row = 3, col = 1},
 	tankfactory       = {order = 15, row = 3, col = 2},
 	hangar            = {order = 16, row = 3, col = 3},
+	shipfactory       = {order = 16, row = 3, col = 4},
 }
 
 local econ_commands = {
