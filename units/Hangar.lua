@@ -1,7 +1,7 @@
-return { factorytest = {
-  name                          = [[WWI test factory]],
-  description                   = [[Produces all units]],
-  buildCostMetal                = Shared.FACTORY_COST,
+return { hangar = {
+  name                          = [[Hangar]],
+  description                   = [[Produces planes]],
+  buildCostMetal                = 10,
   buildDistance                 = Shared.FACTORY_PLATE_RANGE,
   builder                       = true,
   buildingGroundDecalDecaySpeed = 30,
@@ -10,14 +10,7 @@ return { factorytest = {
   buildingGroundDecalType       = [[factoryveh_aoplane.dds]],
 
   buildoptions                  = {
-  	[[brengineer]],
-    [[gertanka7v]],
-    [[brtankmarkiv]],
-    [[brinfrifle]],
-    [[gerinfrifle]],
-    [[frinfrifle]],
     [[gerplanefokker]],
-    [[gunshipheavytrans]],
   },
 
   buildPic                      = [[factoryveh.png]],
