@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 3.1.0 commit date:2022-03-08, commit time:18:16, hash:c77597cd0e15</authoring_tool>
     </contributor>
-    <created>2023-08-13T23:40:01</created>
-    <modified>2023-08-13T23:40:01</modified>
+    <created>2023-08-19T16:04:31</created>
+    <modified>2023-08-19T16:04:31</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -836,9 +836,9 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="base" name="base" type="NODE">
-        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 8.331788 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 12.38351 0 0 0 1</matrix>
         <node id="pelvis" name="pelvis" type="NODE">
-          <matrix sid="transform">1 0 0 0 0 7.54979e-8 -1 2.495e-8 0 1 7.54979e-8 -0.5707898 0 0 0 1</matrix>
+          <matrix sid="transform">1.5 0 0 0 0 2.92061e-7 -1.5 3.7425e-8 0 1.5 2.92061e-7 -0.856185 0 0 0 1</matrix>
           <instance_geometry url="#pelvis-mesh" name="pelvis">
             <bind_material>
               <technique_common>
@@ -849,7 +849,7 @@
             </bind_material>
           </instance_geometry>
           <node id="rupleg" name="rupleg" type="NODE">
-            <matrix sid="transform">1 0 0 -0.7322778 0 1 0 -0.1430998 0 0 1 6.80434e-8 0 0 0 1</matrix>
+            <matrix sid="transform">1 0 0 -0.7322778 0 1 0 -0.1430998 0 0 1 1.36087e-7 0 0 0 1</matrix>
             <instance_geometry url="#rthigh-mesh" name="rupleg">
               <bind_material>
                 <technique_common>
@@ -860,7 +860,7 @@
               </bind_material>
             </instance_geometry>
             <node id="rloleg" name="rloleg" type="NODE">
-              <matrix sid="transform">1 0 0 0 0 1 0 -3.185506 0 0 1 9.53674e-7 0 0 0 1</matrix>
+              <matrix sid="transform">1 0 0 -5.96046e-8 0 1 0 -3.185506 0 0 1 6.35783e-7 0 0 0 1</matrix>
               <instance_geometry url="#rleg-mesh" name="rloleg">
                 <bind_material>
                   <technique_common>
@@ -871,7 +871,7 @@
                 </bind_material>
               </instance_geometry>
               <node id="rfoot" name="rfoot" type="NODE">
-                <matrix sid="transform">1 0 0 0 0 1 0 -3.561221 0 0 1 -0.03671837 0 0 0 1</matrix>
+                <matrix sid="transform">1 0 0 -5.96046e-8 0 1 0 -3.561221 0 0 1 -0.03671837 0 0 0 1</matrix>
                 <instance_geometry url="#rfoot-mesh" name="rfoot">
                   <bind_material>
                     <technique_common>
@@ -885,7 +885,7 @@
             </node>
           </node>
           <node id="lupleg" name="lupleg" type="NODE">
-            <matrix sid="transform">1 0 0 0.7322779 0 1 0 -0.1652107 0 0 1 6.80435e-8 0 0 0 1</matrix>
+            <matrix sid="transform">1 0 0 0.7322779 0 1 0 -0.1652112 0 0 1 1.36087e-7 0 0 0 1</matrix>
             <instance_geometry url="#lthigh-mesh" name="lupleg">
               <bind_material>
                 <technique_common>
@@ -896,7 +896,7 @@
               </bind_material>
             </instance_geometry>
             <node id="lloleg" name="lloleg" type="NODE">
-              <matrix sid="transform">1 0 0 0 0 1 0 -3.244862 0 0 1 9.53674e-7 0 0 0 1</matrix>
+              <matrix sid="transform">1 0 0 -5.96046e-8 0 1 0 -3.244861 0 0 1 6.35783e-7 0 0 0 1</matrix>
               <instance_geometry url="#lleg-mesh" name="lloleg">
                 <bind_material>
                   <technique_common>
@@ -907,7 +907,7 @@
                 </bind_material>
               </instance_geometry>
               <node id="lfoot" name="lfoot" type="NODE">
-                <matrix sid="transform">1 0 0 0 0 1 0 -3.565952 0 0 1 -0.03671932 0 0 0 1</matrix>
+                <matrix sid="transform">1 0 0 -5.96046e-8 0 1 0 -3.565952 0 0 1 -0.03671964 0 0 0 1</matrix>
                 <instance_geometry url="#lfoot-mesh" name="lfoot">
                   <bind_material>
                     <technique_common>
@@ -921,12 +921,12 @@
             </node>
           </node>
           <node id="shield" name="shield" type="NODE">
-            <matrix sid="transform">1 0 0 0 0 1 0 2.058595 0 0 1 0.2518025 0 0 0 1</matrix>
+            <matrix sid="transform">1 0 0 0 0 1 0 2.058595 0 0 1 0.2518019 0 0 0 1</matrix>
           </node>
           <node id="turret" name="turret" type="NODE">
-            <matrix sid="transform">1 0 0 0 0 1 0 1.32323 0 0 1 6.80434e-8 0 0 0 1</matrix>
+            <matrix sid="transform">1 0 0 0 0 1 0 1.32323 0 0 1 1.36087e-7 0 0 0 1</matrix>
             <node id="torso" name="torso" type="NODE">
-              <matrix sid="transform">1 0 0 -0.1161188 0 1 0 -1.381293 0 0 1 2.4869e-14 0 0 0 1</matrix>
+              <matrix sid="transform">1 0 0 -0.1161188 0 1 0 -1.381294 0 0 1 8.52651e-14 0 0 0 1</matrix>
               <instance_geometry url="#torso-mesh" name="torso">
                 <bind_material>
                   <technique_common>
@@ -937,7 +937,7 @@
                 </bind_material>
               </instance_geometry>
               <node id="head" name="head" type="NODE">
-                <matrix sid="transform">1 0 0 0.07528315 0 1 0 4.840057 0 0 1 -0.05958557 0 0 0 1</matrix>
+                <matrix sid="transform">1 0 0 0.07528315 0 1 0 4.840059 0 0 1 -0.05958557 0 0 0 1</matrix>
                 <instance_geometry url="#head-mesh" name="head">
                   <bind_material>
                     <technique_common>
@@ -949,9 +949,9 @@
                 </instance_geometry>
               </node>
               <node id="armhold" name="armhold" type="NODE">
-                <matrix sid="transform">1 0 0 0.1161188 0 1 0 4.10675 0 0 1 -9.53674e-7 0 0 0 1</matrix>
+                <matrix sid="transform">1 0 0 0.1161188 0 1 0 4.106752 0 0 1 -1.27157e-6 0 0 0 1</matrix>
                 <node id="ruparm" name="ruparm" type="NODE">
-                  <matrix sid="transform">1 0 0 -1.263704 0 1 0 -0.0607233 0 0 1 -0.110158 0 0 0 1</matrix>
+                  <matrix sid="transform">1 0 0 -1.263704 0 1 0 -0.06072138 0 0 1 -0.1101583 0 0 0 1</matrix>
                   <instance_geometry url="#ruparm-mesh" name="ruparm">
                     <bind_material>
                       <technique_common>
@@ -962,7 +962,7 @@
                     </bind_material>
                   </instance_geometry>
                   <node id="rarm" name="rarm" type="NODE">
-                    <matrix sid="transform">0.1978741 0 0 -1.079752 0 0.1978741 0 -2.238275 0 0 0.1978741 0.1174984 0 0 0 1</matrix>
+                    <matrix sid="transform">0.1978741 0 0 -1.079753 0 0.1978741 3.55271e-15 -2.238274 0 -3.55271e-15 0.1978741 0.117499 0 0 0 1</matrix>
                     <instance_geometry url="#rarm-mesh" name="rarm">
                       <bind_material>
                         <technique_common>
@@ -973,7 +973,7 @@
                       </bind_material>
                     </instance_geometry>
                     <node id="rloarm" name="rloarm" type="NODE">
-                      <matrix sid="transform">5.053716 0 0 -0.09431458 0 5.053716 1.2049e-6 -0.02186966 0 -1.2049e-6 5.053716 -0.03711092 0 0 0 0.9999999</matrix>
+                      <matrix sid="transform">5.053717 0 0 -0.09431648 0 5.053717 1.2049e-6 -0.02186584 0 -1.2049e-6 5.053717 -0.03711092 0 0 0 0.9999999</matrix>
                       <instance_geometry url="#rloarm-mesh" name="rloarm">
                         <bind_material>
                           <technique_common>
@@ -984,7 +984,7 @@
                         </bind_material>
                       </instance_geometry>
                       <node id="gun" name="gun" type="NODE">
-                        <matrix sid="transform">1 0 0 0.1071618 0 1 0 -0.1898367 0 0 1 3.576632 0 0 0 1</matrix>
+                        <matrix sid="transform">1 0 0 0.1071618 0 1 2.84217e-14 -0.1898352 0 -2.84217e-14 1 3.576633 0 0 0 1</matrix>
                         <instance_geometry url="#gun-mesh" name="gun">
                           <bind_material>
                             <technique_common>
@@ -995,17 +995,17 @@
                           </bind_material>
                         </instance_geometry>
                         <node id="flare" name="flare" type="NODE">
-                          <matrix sid="transform">1 0 0 -0.03630018 0 1 -5.68434e-14 0.9007935 0 5.68434e-14 1 7.251769 0 0 0 1</matrix>
+                          <matrix sid="transform">1 0 0 -0.03630042 0 1 2.84217e-14 0.900795 0 -2.84217e-14 1 7.251772 0 0 0 1</matrix>
                         </node>
                         <node id="eject" name="eject" type="NODE">
-                          <matrix sid="transform">1 0 0 -0.1673031 0 1 -5.68434e-14 1.303197 0 5.68434e-14 1 0.8370669 0 0 0 1</matrix>
+                          <matrix sid="transform">1 0 0 -0.1673033 0 1 2.84217e-14 1.303199 0 -2.84217e-14 1 0.8370683 0 0 0 1</matrix>
                         </node>
                         <node id="lasersight" name="lasersight" type="NODE">
-                          <matrix sid="transform">1 0 0 -0.3185041 0 1 -5.68434e-14 0.7584291 0 5.68434e-14 1 6.86653 0 0 0 1</matrix>
+                          <matrix sid="transform">1 0 0 -0.3185043 0 1 2.84217e-14 0.7584307 0 -2.84217e-14 1 6.866533 0 0 0 1</matrix>
                         </node>
                       </node>
                       <node id="rhand" name="rhand" type="NODE">
-                        <matrix sid="transform">1 0 0 0.09062028 0 1 0 0.1107474 0 0 1 2.767581 0 0 0 1</matrix>
+                        <matrix sid="transform">1 0 0 0.09062028 0 1 2.84217e-14 0.110748 0 -2.84217e-14 1 2.767581 0 0 0 1</matrix>
                         <instance_geometry url="#lloarm_004-mesh" name="rhand">
                           <bind_material>
                             <technique_common>
@@ -1020,7 +1020,7 @@
                   </node>
                 </node>
                 <node id="luparm" name="luparm" type="NODE">
-                  <matrix sid="transform">1 0 0 1.251412 0 1 0 -0.2512503 0 0 1 -0.0734396 0 0 0 1</matrix>
+                  <matrix sid="transform">1 0 0 1.251412 0 1 0 -0.2512493 0 0 1 -0.07343928 0 0 0 1</matrix>
                   <instance_geometry url="#luparm-mesh" name="luparm">
                     <bind_material>
                       <technique_common>
@@ -1031,7 +1031,7 @@
                     </bind_material>
                   </instance_geometry>
                   <node id="larm" name="larm" type="NODE">
-                    <matrix sid="transform">1 0 0 1.025101 0 1 -1.19209e-7 -2.232096 0 1.19209e-7 1 0.05112851 0 0 0 1</matrix>
+                    <matrix sid="transform">1 0 0 1.025101 0 0.9801185 0.1984138 -2.232096 0 -0.1984138 0.9801185 0.05112851 0 0 0 1</matrix>
                     <instance_geometry url="#larm-mesh" name="larm">
                       <bind_material>
                         <technique_common>
@@ -1042,7 +1042,7 @@
                       </bind_material>
                     </instance_geometry>
                     <node id="lloarm" name="lloarm" type="NODE">
-                      <matrix sid="transform">1 0 0 0.07331395 0 1 0 0.01958943 0 0 1 0.0460825 0 0 0 1</matrix>
+                      <matrix sid="transform">1 0 0 0.07331395 0 1 0 0.01958928 0 0 1 0.04608256 0 0 0 1</matrix>
                       <instance_geometry url="#lloarm-mesh" name="lloarm">
                         <bind_material>
                           <technique_common>
@@ -1053,7 +1053,7 @@
                         </bind_material>
                       </instance_geometry>
                       <node id="lhand" name="lhand" type="NODE">
-                        <matrix sid="transform">1 0 0 -0.05770183 0 1 0 -0.1077965 0 0 1 2.691501 0 0 0 1</matrix>
+                        <matrix sid="transform">1 0 0 -0.05770159 0 1 0 -0.107797 0 0 1 2.691501 0 0 0 1</matrix>
                         <instance_geometry url="#lloarm_003-mesh" name="lhand">
                           <bind_material>
                             <technique_common>
@@ -1065,15 +1065,15 @@
                         </instance_geometry>
                       </node>
                       <node id="gunpod" name="gunpod" type="NODE">
-                        <matrix sid="transform">0.9999997 0 0 0.7354422 0 1.94707e-7 0.9999997 -0.1118592 0 -0.9999997 1.94707e-7 2.042665 0 0 0 1</matrix>
+                        <matrix sid="transform">0.9999997 0 0 0.7354424 0 1.93715e-7 0.9999996 -0.1118606 0 -0.9999996 1.93715e-7 2.042666 0 0 0 1</matrix>
                         <node id="ac1" name="ac1" type="NODE">
-                          <matrix sid="transform">1 0 0 -0.3007934 0 1 0 -1.501964 0 0 1 -1.25034e-4 0 0 0 1</matrix>
+                          <matrix sid="transform">1 0 0 -0.3007936 0 1 0 -1.501964 0 0 1 -1.24931e-4 0 0 0 1</matrix>
                         </node>
                         <node id="ac2" name="ac2" type="NODE">
-                          <matrix sid="transform">1 0 0 -0.3007934 0 1 0 -1.492752 0 0 1 -0.4371406 0 0 0 1</matrix>
+                          <matrix sid="transform">1 0 0 -0.3007936 0 1 0 -1.492752 0 0 1 -0.4371411 0 0 0 1</matrix>
                         </node>
                         <node id="nanospray" name="nanospray" type="NODE">
-                          <matrix sid="transform">1 0 0 -0.7490923 0 1 0 -1.153947 0 0 1 -0.7201654 0 0 0 1</matrix>
+                          <matrix sid="transform">1 0 0 -0.7490926 0 1 0 -1.153946 0 0 1 -0.7201656 0 0 0 1</matrix>
                         </node>
                       </node>
                     </node>

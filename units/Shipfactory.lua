@@ -33,10 +33,9 @@ return { shipfactory = {
     selectionscalemult = 1,
     factorytab       = 1,
     shared_energy_gen = 1,
-    parent_of_plate   = [[plateveh]],
 
-    outline_x = 250,
-    outline_y = 250,
+    outline_x = 0,
+    outline_y = 0,
     outline_yoff = 5,
   },
 

@@ -3,10 +3,6 @@ return { barracks = {
   description                   = [[Produces all infantry units]],
   buildCostMetal                = 10,
   builder                       = true,
-  buildingGroundDecalDecaySpeed = 30,
-  buildingGroundDecalSizeX      = 11,
-  buildingGroundDecalSizeY      = 11,
-  buildingGroundDecalType       = [[factoryveh_aoplane.dds]],
 
   buildoptions                  = {
   	[[brengineer]],
@@ -40,8 +36,8 @@ return { barracks = {
     factorytab       = 1,
     shared_energy_gen = 1,
 
-    outline_x = 250,
-    outline_y = 250,
+    outline_x = 0,
+    outline_y = 0,
     outline_yoff = 5,
   },
 
@@ -50,7 +46,7 @@ return { barracks = {
   footprintX                    = 8,
   footprintZ                    = 8,
   iconType                      = [[facvehicle]],
-  levelGround                   = false,
+  levelGround                   = true,
   maxDamage                     = 4000,
   maxSlope                      = 15,
   maxVelocity                   = 0,
@@ -62,7 +58,6 @@ return { barracks = {
   selfDestructAs                = [[LARGE_BUILDINGEX]],
   showNanoSpray                 = false,
   sightDistance                 = 273,
-  useBuildingGroundDecal        = true,
   workerTime                    = Shared.FACTORY_BUILDPOWER,
   yardMap                       = "oooooooo oooooooo oooooooo yccccccy yccccccy yccccccy yccccccy yccccccy",
 

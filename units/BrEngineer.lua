@@ -21,11 +21,12 @@ return { brengineer = {
   canMove             = true,
   canPatrol           = true,
   category            = [[LAND]],
-  collisionVolumeOffsets = [[0 5.5 0]],
-  collisionVolumeScales  = [[11 11 11]],
+  collisionVolumeOffsets = [[0 7 0]],
+  collisionVolumeScales  = [[18 28 18]],
   collisionVolumeType    = [[CylY]],
-  selectionVolumeOffsets = [[0 5.5 0]],
-  selectionVolumeScales  = [[11 11 11]],
+  selectionVolumeOffsets = [[0 7 0]],
+  selectionVolumeScales  = [[18 28 18]],
+  selectionVolumeType    = [[CylY]],
   selectionVolumeType    = [[CylY]],
 
   customParams        = {
@@ -33,7 +34,7 @@ return { brengineer = {
     soundselect_vol = [[0.5]],
     bait_level_default = 0,
     aimposoffset      = [[0 0 0]],
-    midposoffset      = [[0 0 0]],
+    midposoffset      = [[0 10 0]],
     modelradius       = [[11]],
     selection_scale   = 0.35,
 

@@ -2,11 +2,8 @@ return { hangar = {
   name                          = [[Airdome]],
   description                   = [[Produces planes]],
   buildCostMetal                = 10,
-  buildDistance                 = Shared.FACTORY_PLATE_RANGE,
+  buildDistance                 = 250,
   builder                       = true,
-  buildingGroundDecalDecaySpeed = 30,
-  buildingGroundDecalSizeX      = 11,
-  buildingGroundDecalSizeY      = 11,
 
   buildoptions                  = {
     [[gerplanefokker]],
@@ -39,10 +36,9 @@ return { hangar = {
     selectionscalemult = 1,
     factorytab       = 1,
     shared_energy_gen = 1,
-    parent_of_plate   = [[plateveh]],
 
-    outline_x = 250,
-    outline_y = 250,
+    outline_x = 0,
+    outline_y = 0,
     outline_yoff = 5,
   },
 
@@ -58,7 +54,7 @@ return { hangar = {
   maxWaterDepth                 = 0,
   moveState                     = 1,
   noAutoFire                    = false,
-  objectName                    = [[barracks.dae]],
+  objectName                    = [[airdome.dae]],
   script                        = [[barracks.lua]],
   selfDestructAs                = [[LARGE_BUILDINGEX]],
   showNanoSpray                 = false,

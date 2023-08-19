@@ -21,6 +21,9 @@ return { starfort = {
     aimposoffset   = [[0 12 0]],
     midposoffset   = [[0 4 0]],
     aim_lookahead  = 50,
+    outline_x = 0,
+    outline_y = 0,
+    outline_yoff = 13.5,
   },
 
   --explodeAs                     = [[LARGE_BUILDINGEX]],
@@ -29,11 +32,11 @@ return { starfort = {
   footprintX                    = 3,
   footprintZ                    = 3,
   iconType                      = [[defenseriot]],
-  levelGround                   = false,
+  levelGround                   = true,
   maxDamage                     = 1500,
   maxSlope                      = 18,
   noChaseCategory               = [[FIXEDWING LAND SHIP SWIM GUNSHIP SUB HOVER]],
-  objectName                    = [[pillbox.dae]],
+  objectName                    = [[starfort.dae]],
   script                        = "pillbox.lua",
   --selfDestructAs                = [[LARGE_BUILDINGEX]],
 

@@ -21,6 +21,9 @@ return { pillbox = {
     aimposoffset   = [[0 12 0]],
     midposoffset   = [[0 4 0]],
     aim_lookahead  = 50,
+    outline_x = 0,
+    outline_y = 0,
+    outline_yoff = 0,
   },
 
   --explodeAs                     = [[LARGE_BUILDINGEX]],
