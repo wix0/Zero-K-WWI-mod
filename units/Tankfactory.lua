@@ -9,7 +9,9 @@ return { tankfactory = {
     [[gertanka7v]],
     [[brtankmarkiv]],
     [[artillery]],
-    [[frtankft]]
+    [[frtankft]],
+    [[gerveharmored]],
+    [[gervehflak]]
   },
 
   buildPic                      = [[factoryveh.png]],

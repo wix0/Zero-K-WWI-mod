@@ -121,6 +121,8 @@ local factoryUnitPosDef = {
 		brtankmarkiv          = unitTypes._1x2,
 		artillery             = unitTypes._1x3,
 		frtankft              = unitTypes._1x4,
+		gerveharmored         = unitTypes._1x5,
+		gervehflak         = unitTypes._1x6,
 	},
 	hangar = {
 		gerplanefokker        = unitTypes._1x1,
