@@ -37,7 +37,7 @@ return { starfort = {
   maxSlope                      = 18,
   noChaseCategory               = [[FIXEDWING LAND SHIP SWIM GUNSHIP SUB HOVER]],
   objectName                    = [[starfort.dae]],
-  script                        = "pillbox.lua",
+  script                        = [["starfort.lua"]],
   --selfDestructAs                = [[LARGE_BUILDINGEX]],
 
   sfxtypes                      = {
@@ -59,8 +59,8 @@ return { starfort = {
       def                = [[vehriot_WEAPON]],
       badTargetCategory  = [[FIXEDWING]],
       onlyTargetCategory = [[FIXEDWING LAND SINK TURRET SHIP SWIM FLOAT GUNSHIP HOVER]],
-      mainDir            = [[0 1 0]],
-      maxAngleDif        = 240,
+      --mainDir            = [[0 1 0]],
+      --maxAngleDif        = 240,
     },
 
   },
