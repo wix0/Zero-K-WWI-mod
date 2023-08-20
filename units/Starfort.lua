@@ -37,7 +37,7 @@ return { starfort = {
   maxSlope                      = 18,
   noChaseCategory               = [[FIXEDWING LAND SHIP SWIM GUNSHIP SUB HOVER]],
   objectName                    = [[starfort.dae]],
-  script                        = [["starfort.lua"]],
+  script                        = [[starfort.lua]],
   --selfDestructAs                = [[LARGE_BUILDINGEX]],
 
   sfxtypes                      = {

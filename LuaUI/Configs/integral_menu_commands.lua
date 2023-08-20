@@ -119,7 +119,8 @@ local factoryUnitPosDef = {
 	tankfactory = {
 		gertanka7v            = unitTypes._1x1,
 		brtankmarkiv          = unitTypes._1x2,
-		artillery             = unitTypes._1x3
+		artillery             = unitTypes._1x3,
+		frtankft              = unitTypes._1x4,
 	},
 	hangar = {
 		gerplanefokker        = unitTypes._1x1,

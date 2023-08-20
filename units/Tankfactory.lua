@@ -8,7 +8,8 @@ return { tankfactory = {
   buildoptions                  = {
     [[gertanka7v]],
     [[brtankmarkiv]],
-    [[artillery]]
+    [[artillery]],
+    [[frtankft]]
   },
 
   buildPic                      = [[factoryveh.png]],
