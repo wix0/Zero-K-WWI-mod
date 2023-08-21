@@ -314,7 +314,7 @@ local factory_commands = {
 	barracks          = {order = 14, row = 3, col = 1},
 	tankfactory       = {order = 15, row = 3, col = 2},
 	hangar            = {order = 16, row = 3, col = 3},
-	shipfactory       = {order = 16, row = 3, col = 4},
+	shipfactory       = {order = 17, row = 3, col = 5},
 }
 
 local econ_commands = {
