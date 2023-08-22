@@ -7,6 +7,7 @@ return { gerhangar = {
 
   buildoptions                  = {
     [[gerplanefokker]],
+    [[balloon]],
   },
 
   buildPic                      = [[factoryveh.png]],

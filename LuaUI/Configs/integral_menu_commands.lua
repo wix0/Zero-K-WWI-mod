@@ -149,6 +149,7 @@ local factoryUnitPosDef = {
 	},
 	gerhangar = {
 		gerplanefokker        = unitTypes._1x1,
+		balloon        = unitTypes._1x2,
 	},
 	brhangar = {
 	},
