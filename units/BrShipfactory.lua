@@ -1,6 +1,6 @@
-return { shipfactory = {
-  name                          = [[Ship factory]],
-  description                   = [[Produces ships]],
+return { brshipfactory = {
+  name                          = [[British Ship factory]],
+  description                   = [[Produces British ships]],
   buildCostMetal                = 10,
   buildDistance                 = Shared.FACTORY_PLATE_RANGE,
   builder                       = true,

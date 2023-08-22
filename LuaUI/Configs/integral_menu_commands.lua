@@ -110,24 +110,55 @@ local unitTypes = {
 }
 
 local factoryUnitPosDef = {
-	barracks = {
+	brbarracks = {
 		brengineer            = unitTypes._1x1,
 		brinfrifle            = unitTypes._1x2,
-		gerinfrifle           = unitTypes._1x3,
-		frinfrifle            = unitTypes._1x4,
+		brinfmortar           = unitTypes._1x3,
+		brinfflame			  = unitTypes._1x4,
+		brinfmachinegunner    = unitTypes._1x5,
 	},
-	tankfactory = {
-		gertanka7v            = unitTypes._1x1,
+	gerbarracks = {
+		brengineer            = unitTypes._1x1,
+		gerinfrifle           = unitTypes._1x2,
+		gerinfmortar		  = unitTypes._1x3,
+		gerinfflame           = unitTypes._1x4,
+		gerinfmachinegunner    = unitTypes._1x5,
+	},
+	frbarracks = {
+		brengineer            = unitTypes._1x1,
+		frinfrifle            = unitTypes._1x2,
+		frinfmortar 		  = unitTypes._1x3,
+    	frinfflame			  = unitTypes._1x4,
+		frinfmachinegunner    = unitTypes._1x5,
+	},
+	frtankfactory = {
+		artillery             = unitTypes._1x1,
+		frtankft              = unitTypes._1x2,
+	},
+	gertankfactory = {
+		artillery             = unitTypes._1x1,
+		gertanka7v            = unitTypes._1x2,
+		gerveharmored         = unitTypes._1x3,
+		gervehflak         	  = unitTypes._1x4,
+	},
+	brtankfactory = {
+		artillery             = unitTypes._1x1,
 		brtankmarkiv          = unitTypes._1x2,
-		artillery             = unitTypes._1x3,
-		frtankft              = unitTypes._1x4,
-		gerveharmored         = unitTypes._1x5,
-		gervehflak         = unitTypes._1x6,
 	},
-	hangar = {
+	frhangar = {
+	},
+	gerhangar = {
 		gerplanefokker        = unitTypes._1x1,
 	},
-	shipfactory = {
+	brhangar = {
+	},
+	brshipfactory = {
+		placeholdership        = unitTypes._1x1,
+	},
+	gershipfactory = {
+		placeholdership        = unitTypes._1x1,
+	},
+	frshipfactory = {
 		placeholdership        = unitTypes._1x1,
 	},
 	factorycloak = {
@@ -311,10 +342,10 @@ local factory_commands = {
 	factoryship       = {order = 11, row = 2, col = 5},
 	striderhub        = {order = 12, row = 2, col = 6},
 	[CMD_BUILD_PLATE] = {order = 13, row = 3, col = 4},
-	barracks          = {order = 14, row = 3, col = 1},
-	tankfactory       = {order = 15, row = 3, col = 2},
-	hangar            = {order = 16, row = 3, col = 3},
-	shipfactory       = {order = 17, row = 3, col = 5},
+	--barracks          = {order = 14, row = 3, col = 1},
+	--tankfactory       = {order = 15, row = 3, col = 2},
+	--hangar            = {order = 16, row = 3, col = 3},
+	--shipfactory       = {order = 17, row = 3, col = 5},
 }
 
 local econ_commands = {
@@ -343,14 +374,12 @@ local defense_commands = {
 	turretaaflak      = {order = 11, row = 2, col = 3},
 	turretaafar       = {order = 12, row = 2, col = 4},
 	turretaaheavy     = {order = 13, row = 2, col = 5},
-	trench      	  = {order = 20, row = 2, col = 6},
 
 	turretimpulse     = {order = 4, row = 3, col = 1},
 	turrettorp        = {order = 14, row = 3, col = 2},
 	turretheavy       = {order = 16, row = 3, col = 3},
 	turretantiheavy   = {order = 17, row = 3, col = 4},
-	starfort          = {order = 18, row = 3, col = 5},
-	pillbox      	  = {order = 19, row = 3, col = 6},
+	staticshield      = {order = 18, row = 3, col = 5},
 }
 
 local special_commands = {

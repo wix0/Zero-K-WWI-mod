@@ -1,17 +1,15 @@
-return { tankfactory = {
-  name                          = [[War factory]],
-  description                   = [[Produces tanks]],
+return { brbarracks = {
+  name                          = [[British Barracks]],
+  description                   = [[Produces British infantry units]],
   buildCostMetal                = 10,
-  buildDistance                 = Shared.FACTORY_PLATE_RANGE,
   builder                       = true,
 
   buildoptions                  = {
-    [[gertanka7v]],
-    [[brtankmarkiv]],
-    [[artillery]],
-    [[frtankft]],
-    [[gerveharmored]],
-    [[gervehflak]]
+  	[[brengineer]],
+    [[brinfrifle]],
+    [[brinfmortar]],
+    [[brinfflame]],
+    [[brinfmachinegunner]],
   },
 
   buildPic                      = [[factoryveh.png]],
@@ -56,7 +54,7 @@ return { tankfactory = {
   maxWaterDepth                 = 0,
   moveState                     = 1,
   noAutoFire                    = false,
-  objectName                    = [[wwtankfactory.dae]],
+  objectName                    = [[barracks.dae]],
   script                        = [[barracks.lua]],
   selfDestructAs                = [[LARGE_BUILDINGEX]],
   showNanoSpray                 = false,
