@@ -116,13 +116,15 @@ local factoryUnitPosDef = {
 		brinfmortar           = unitTypes._1x3,
 		brinfflame			  = unitTypes._1x4,
 		brinfmachinegunner    = unitTypes._1x5,
+		brinfsniper 		  = unitTypes._1x6,
 	},
 	gerbarracks = {
 		brengineer            = unitTypes._1x1,
 		gerinfrifle           = unitTypes._1x2,
 		gerinfmortar		  = unitTypes._1x3,
 		gerinfflame           = unitTypes._1x4,
-		gerinfmachinegunner    = unitTypes._1x5,
+		gerinfmachinegunner   = unitTypes._1x5,
+		gerinfsniper 		  = unitTypes._1x6,
 	},
 	frbarracks = {
 		brengineer            = unitTypes._1x1,
@@ -130,6 +132,7 @@ local factoryUnitPosDef = {
 		frinfmortar 		  = unitTypes._1x3,
     	frinfflame			  = unitTypes._1x4,
 		frinfmachinegunner    = unitTypes._1x5,
+		frinfsniper 		  = unitTypes._1x6,
 	},
 	frtankfactory = {
 		artillery             = unitTypes._1x1,

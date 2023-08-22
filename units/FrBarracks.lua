@@ -10,6 +10,7 @@ return { frbarracks = {
     [[frinfmortar]],
     [[frinfflame]],
     [[frinfmachinegunner]],
+    [[frinfsniper]],
   },
 
   buildPic                      = [[factoryveh.png]],

@@ -10,6 +10,7 @@ return { gerbarracks = {
     [[gerinfmortar]],
     [[gerinfflame]],
     [[gerinfmachinegunner]],
+    [[gerinfsniper]],
   },
 
   buildPic                      = [[factoryveh.png]],

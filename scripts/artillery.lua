@@ -17,7 +17,7 @@ local function SetDeploy(wantDeploy)
 	else
 		deployed = false
         Move(turret, z_axis, 0, 5)
-        Turn(base, x_axis, math.rad(20), 1)
+        Turn(base, x_axis, math.rad(0), 1)
 		Sleep(1000)
 	end
 end

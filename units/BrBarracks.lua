@@ -10,6 +10,7 @@ return { brbarracks = {
     [[brinfmortar]],
     [[brinfflame]],
     [[brinfmachinegunner]],
+    [[brinfsniper]],
   },
 
   buildPic                      = [[factoryveh.png]],
