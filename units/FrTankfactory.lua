@@ -9,6 +9,7 @@ return { frtankfactory = {
     [[artillery]],
     [[frtankft]],
     [[frveharmored]],
+    [[frtankchamond]],
   },
 
   buildPic                      = [[factoryveh.png]],

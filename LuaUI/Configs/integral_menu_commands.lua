@@ -138,6 +138,7 @@ local factoryUnitPosDef = {
 		artillery             = unitTypes._1x1,
 		frtankft              = unitTypes._1x2,
 		frveharmored          = unitTypes._1x3,
+		frtankchamond         = unitTypes._1x4,
 	},
 	gertankfactory = {
 		artillery             = unitTypes._1x1,
