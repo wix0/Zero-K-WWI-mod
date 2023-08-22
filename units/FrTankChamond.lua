@@ -44,7 +44,7 @@ return { frtankchamond = {
   noAutoFire          = false,
   noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB DRONE]],
   objectName          = [[chamond.dae]],
-  script              = [[chamond.lua]],
+  script              = [[fttank.lua]],
   selfDestructAs      = [[BIG_UNITEX]],
 
   sfxtypes            = {
