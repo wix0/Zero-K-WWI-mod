@@ -73,7 +73,7 @@ return { brinfmachinegunner = {
 
   weapons                       = {
 
-    {
+    [5] = {
       def                = [[turretriot_WEAPON]],
       badTargetCategory  = [[FIXEDWING]],
       onlyTargetCategory = [[FIXEDWING LAND SINK TURRET SHIP SWIM FLOAT GUNSHIP HOVER]],
