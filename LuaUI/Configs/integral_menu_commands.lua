@@ -134,6 +134,7 @@ local factoryUnitPosDef = {
 	frtankfactory = {
 		artillery             = unitTypes._1x1,
 		frtankft              = unitTypes._1x2,
+		frveharmored          = unitTypes._1x3,
 	},
 	gertankfactory = {
 		artillery             = unitTypes._1x1,
@@ -144,6 +145,7 @@ local factoryUnitPosDef = {
 	brtankfactory = {
 		artillery             = unitTypes._1x1,
 		brtankmarkiv          = unitTypes._1x2,
+		brveharmored          = unitTypes._1x3,
 	},
 	frhangar = {
 	},

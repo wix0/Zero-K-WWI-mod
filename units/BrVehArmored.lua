@@ -1,34 +1,29 @@
-return { brinfmachinegunner = {
-  unitname            = [[brinfmachinegunner]],
-  name                = [[British Machinegunner Infantry]],
-  description         = [[British Machinegunner Infantry]],
-  acceleration        = 0.3,
-  --autoHeal            = 0.1,
-  brakeRate           = 2.7,
+return { brveharmored = {
+  unitname            = [[brveharmored]],
+  name                = [[Lanchester Light Armored Vehicle]],
+  description         = [[British Lanchester Armored Vehicle, can carry a passenger]],
+  acceleration        = 0.144,
+  brakeRate           = 0.576,
   buildCostMetal      = 10,
-  buildDistance       = 250,
   builder             = false,
-  buildPic            = [[cloakraid.png]],
+  buildPic            = [[tankassault.png]],
   canGuard            = true,
   canMove             = true,
   canPatrol           = true,
   category            = [[LAND]],
-  collisionVolumeOffsets = [[0 7 0]],
-  collisionVolumeScales  = [[18 28 18]],
-  collisionVolumeType    = [[CylY]],
-  selectionVolumeOffsets = [[0 7 0]],
-  selectionVolumeScales  = [[18 28 18]],
-  selectionVolumeType    = [[CylY]],
+  collisionVolumeOffsets = [[0 -8 -15]],
+  collisionVolumeScales  = [[30 26 60]],
+  collisionVolumeType    = [[box]],
+  selectionVolumeOffsets = [[0 -8 -15]],
+  selectionVolumeScales  = [[30 26 60]],
+  selectionVolumeType    = [[box]],
   corpse              = [[DEAD]],
 
   customParams        = {
-    soundok_vol = [[0.58]],
-    soundselect_vol = [[0.5]],
-    soundbuild = [[builder_start]],
     bait_level_default = 0,
     aimposoffset      = [[0 0 0]],
-    midposoffset      = [[0 10 0]],
-    modelradius       = [[11]],
+    midposoffset      = [[0 17 15]],
+    modelradius       = [[15]],
     selection_scale   = 0.35,
 
     outline_x = 0,
@@ -36,40 +31,38 @@ return { brinfmachinegunner = {
     outline_yoff = 13.5,
   },
 
-  footprintX             = 2,
-  footprintZ             = 2,
-  iconType               = [[kbotraider]],
-  idleTime               = 150,
-  leaveTracks            = true,
-  maxDamage              = 230,
-  maxSlope               = 36,
-  maxVelocity            = 0.85,
-  maxWaterDepth          = 22,
-  movementClass          = [[KBOT2]],
-  noAutoFire             = false,
-  noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[britinf.dae]],
-  script              = [[InfantryRifle.lua]],
+  explodeAs           = [[BIG_UNITEX]],
+  footprintX          = 8,
+  footprintZ          = 8,
+  iconType            = [[tankassault]],
+  leaveTracks         = true,
+  maxDamage           = 6800,
+  maxSlope            = 18,
+  maxVelocity         = 2.45,
+  maxWaterDepth       = 22,
+  movementClass       = [[TANK4]],
+  noAutoFire          = false,
+  noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB DRONE]],
+  objectName          = [[lanchester.dae]],
+  script              = [[erhardt.lua]],
+  selfDestructAs      = [[BIG_UNITEX]],
 
   sfxtypes            = {
 
     explosiongenerators = {
-      --[[custom:emg_shells_l]]
-      [[custom:flashmuzzle1]],
+      [[custom:LARGE_MUZZLE_FLASH_FX]],
     },
 
   },
-
-  showNanoSpray       = false,
-  sightDistance          = 560,
-  trackOffset            = 0,
-  trackStrength          = 8,
-  trackStretch           = 0.9,
-  trackType              = [[ComTrack]],
-  trackWidth             = 4,
-  turnRate               = 2000,
-  upright             = true,
-  workerTime          = 12,
+  sightDistance       = 506,
+  trackOffset         = 5,
+  trackStrength       = 8,
+  trackStretch        = 1,
+  trackType           = [[StdTank]],
+  trackWidth          = 30,
+  turninplace         = 0,
+  turnRate            = 583,
+  workerTime          = 0,
 
   weapons                       = {
 
@@ -122,5 +115,29 @@ return { brinfmachinegunner = {
       weaponType              = [[Cannon]],
       weaponVelocity          = 1600,
     },
+
   },
+
+  featureDefs         = {
+
+    DEAD  = {
+      blocking         = true,
+      featureDead      = [[HEAP]],
+      footprintX       = 3,
+      footprintZ       = 3,
+      collisionVolumeOffsets = [[0 0 0]],
+      collisionVolumeScales  = [[50 50 50]],
+      collisionVolumeType    = [[ellipsoid]],
+      object           = [[a7v2.dae]],
+    },
+
+    HEAP  = {
+      blocking         = false,
+      footprintX       = 3,
+      footprintZ       = 3,
+      object           = [[debris3x3b.s3o]],
+    },
+
+  },
+
 } }

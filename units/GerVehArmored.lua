@@ -64,49 +64,58 @@ return { gerveharmored = {
   turnRate            = 583,
   workerTime          = 0,
 
-  weapons             = {
+  weapons                       = {
 
     {
-      def                = [[COR_REAP]],
-      mainDir            = [[0.0 0.1 0.3]],
-      maxAngleDif        = 150,
-      badTargetCategory  = [[FIXEDWING GUNSHIP]],
+      def                = [[turretriot_WEAPON]],
+      badTargetCategory  = [[FIXEDWING]],
       onlyTargetCategory = [[FIXEDWING LAND SINK TURRET SHIP SWIM FLOAT GUNSHIP HOVER]],
+      mainDir            = [[0 1 0]],
+      maxAngleDif        = 240,
     },
 
   },
 
+  weaponDefs                    = {
 
-  weaponDefs          = {
+    turretriot_WEAPON = {
+      name                    = [[Heavy Machinegun]],
+      accuracy                = 500,
+      alphaDecay              = 0.7,
+      areaOfEffect            = 20,
+      avoidFeature            = false,
+      burnblow                = true,
+      craterBoost             = 0.15,
+      craterMult              = 0.3,
+      --collideFriendly         = false,
 
-    COR_REAP = {
-      name                    = [[Medium Plasma Cannon]],
-      areaOfEffect            = 32,
-      burst                   = 1,
-      burstRate               = 0.2,
-      craterBoost             = 0,
-      craterMult              = 0,
-
-      damage                  = {
-        default = 300.1,
+      customparams = {
+        light_color = [[0.8 0.76 0.38]],
+        light_radius = 180,
       },
 
-      explosionGenerator      = [[custom:DEFAULT]],
-      impulseBoost            = 0,
-      impulseFactor           = 0.4,
+      damage                  = {
+        default = 45,
+      },
+
+      edgeEffectiveness       = 0.5,
+      explosionGenerator      = [[custom:EMG_HIT_HE]],
+      intensity               = 0.7,
       interceptedByShieldType = 1,
       noSelfDamage            = true,
-      range                   = 360,
-      reloadtime              = 4,
-      soundHit                = [[weapon/cannon/reaper_hit]],
-      soundStart              = [[weapon/cannon/cannon_fire5]],
+      range                   = 600,
+      reloadtime              = 0.1,
+      rgbColor                = [[1 0.95 0.4]],
+      separation              = 1.5,
+      --soundHit                = [[weapon/cannon/emg_hit]],
+      soundStart              = [[weapon/RUSMaximSingle]],
+      soundStartVolume        = 0.5,
+      stages                  = 10,
       turret                  = true,
       weaponType              = [[Cannon]],
-      weaponVelocity          = 255,
+      weaponVelocity          = 1600,
     },
-
   },
-
 
   featureDefs         = {
 

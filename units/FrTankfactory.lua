@@ -8,6 +8,7 @@ return { frtankfactory = {
   buildoptions                  = {
     [[artillery]],
     [[frtankft]],
+    [[frveharmored]],
   },
 
   buildPic                      = [[factoryveh.png]],

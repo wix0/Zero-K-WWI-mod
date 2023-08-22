@@ -71,59 +71,56 @@ return { gerinfmachinegunner = {
   upright             = true,
   workerTime          = 12,
 
-  weapons             = {
-    [5] = {
-      def                = [[EMG]],
-      onlyTargetCategory = [[SWIM LAND SHIP SINK TURRET FLOAT GUNSHIP FIXEDWING HOVER]],
+  weapons                       = {
+
+    {
+      def                = [[turretriot_WEAPON]],
+      badTargetCategory  = [[FIXEDWING]],
+      onlyTargetCategory = [[FIXEDWING LAND SINK TURRET SHIP SWIM FLOAT GUNSHIP HOVER]],
+      mainDir            = [[0 1 0]],
+      maxAngleDif        = 240,
     },
 
   },
 
+  weaponDefs                    = {
 
-  weaponDefs          = {
-    
-    EMG = {
-      name                    = [[Heavy Pulse MG]],
-      areaOfEffect            = 40,
+    turretriot_WEAPON = {
+      name                    = [[Heavy Machinegun]],
+      accuracy                = 500,
+      alphaDecay              = 0.7,
+      areaOfEffect            = 20,
       avoidFeature            = false,
-      burnBlow                = true,
-      burst                   = 4,
-      burstrate               = 0.1,
-      collideFriendly         = false,
+      burnblow                = true,
       craterBoost             = 0.15,
       craterMult              = 0.3,
+      --collideFriendly         = false,
 
       customparams = {
-        combatrange = 630,
-        light_camera_height = 2000,
-        light_color = [[0.9 0.84 0.45]],
-        light_ground_height = 120,
+        light_color = [[0.8 0.76 0.38]],
+        light_radius = 180,
       },
-      
+
       damage                  = {
-        default = 19.3,
+        default = 45,
       },
 
       edgeEffectiveness       = 0.5,
       explosionGenerator      = [[custom:EMG_HIT_HE]],
-      firestarter             = 70,
-      impulseBoost            = 0,
-      impulseFactor           = 0.2,
+      intensity               = 0.7,
       interceptedByShieldType = 1,
-      myGravity               = 0.15,
       noSelfDamage            = true,
       range                   = 600,
-      reloadtime              = 0.433,
-      rgbColor                = [[1 0.95 0.5]],
-      soundHit                = [[weapon/cannon/emg_hit]],
-      soundStart              = [[weapon/cannon/brawler_emg]],
-      sprayAngle              = 1400,
-      tolerance               = 2000,
+      reloadtime              = 0.1,
+      rgbColor                = [[1 0.95 0.4]],
+      separation              = 1.5,
+      --soundHit                = [[weapon/cannon/emg_hit]],
+      soundStart              = [[weapon/RUSMaximSingle]],
+      soundStartVolume        = 0.5,
+      stages                  = 10,
       turret                  = true,
-      weaponTimer             = 1,
       weaponType              = [[Cannon]],
-      weaponVelocity          = 420,
+      weaponVelocity          = 1600,
     },
   },
-
 } }
