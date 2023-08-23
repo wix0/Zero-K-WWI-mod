@@ -6,6 +6,8 @@ return { brhangar = {
   builder                       = true,
 
   buildoptions                  = {
+    [[brballoon]],
+    [[zepptrans]],
   },
 
   buildPic                      = [[factoryveh.png]],

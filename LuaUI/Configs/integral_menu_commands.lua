@@ -152,12 +152,18 @@ local factoryUnitPosDef = {
 		brveharmored          = unitTypes._1x3,
 	},
 	frhangar = {
+		frballoon             = unitTypes._1x1,
+		zepptrans             = unitTypes._1x2,
 	},
 	gerhangar = {
-		gerplanefokker        = unitTypes._1x1,
-		balloon        = unitTypes._1x2,
+		gerballoon            = unitTypes._1x1,
+		zepptrans             = unitTypes._1x2,
+		gerzepp               = unitTypes._1x3,
+		gerplanefokker        = unitTypes._1x4,
 	},
 	brhangar = {
+		brballoon        = unitTypes._1x1,
+		zepptrans             = unitTypes._1x2,
 	},
 	brshipfactory = {
 		placeholdership        = unitTypes._1x1,

@@ -6,6 +6,8 @@ return { frhangar = {
   builder                       = true,
 
   buildoptions                  = {
+    [[frballoon]],
+    [[zepptrans]],
   },
 
   buildPic                      = [[factoryveh.png]],
