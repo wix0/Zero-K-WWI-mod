@@ -9,8 +9,8 @@ return { frtankfactory = {
     [[frtankft]],
     [[frveharmored]],
     [[frtankchamond]],
-    [[arty2]],
-    [[arty3]],
+    [[frartylight]],
+    [[frartyheavy]],
   },
 
   buildPic                      = [[factoryveh.png]],

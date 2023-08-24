@@ -1,7 +1,7 @@
-return { gerartybertha = {
-  unitname            = [[gerartybertha]],
-  name                = [[Big Bertha]],
-  description         = [[German Long range artillery]],
+return { gerartylight = {
+  unitname            = [[gerartylight]],
+  name                = [[10cm k 14 Field Gun]],
+  description         = [[German 10cm k 14 Field artillery]],
   acceleration        = 0.4,
   brakeRate           = 2.4,
   buildCostMetal      = 10,
@@ -44,7 +44,7 @@ return { gerartybertha = {
   movementClass       = [[TANK4]],
   noAutoFire          = false,
   noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB DRONE]],
-  objectName          = [[bertha.dae]],
+  objectName          = [[arty10k14.dae]],
   script              = [[tanka7v.lua]],
   selfDestructAs      = [[BIG_UNITEX]],
 

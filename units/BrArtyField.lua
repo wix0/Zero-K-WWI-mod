@@ -1,7 +1,7 @@
-return { brartybl8 = {
-  unitname            = [[brartybl8]],
-  name                = [[BL 8inch Howitzer]],
-  description         = [[British Long range artillery]],
+return { brartyfield = {
+  unitname            = [[brartyfield]],
+  name                = [[BL 6 Field Gun]],
+  description         = [[British field artillery BL 6-inch gun Mk XIX]],
   acceleration        = 0.4,
   brakeRate           = 2.4,
   buildCostMetal      = 10,
@@ -44,8 +44,8 @@ return { brartybl8 = {
   movementClass       = [[TANK4]],
   noAutoFire          = false,
   noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB DRONE]],
-  objectName          = [[artybl8.dae]],
-  script              = [[artybl8.lua]],
+  objectName          = [[arty2.dae]],
+  script              = [[tanka7v.lua]],
   selfDestructAs      = [[BIG_UNITEX]],
 
   sfxtypes            = {

@@ -7,8 +7,9 @@ return { brtankfactory = {
 
   buildoptions                  = {
     [[brtankmarkiv]],
-    [[brartybl8]],
     [[brveharmored]],
+    [[brartyheavy]],
+    [[brartyfield]],
   },
 
   buildPic                      = [[factoryveh.png]],

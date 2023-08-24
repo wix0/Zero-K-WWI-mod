@@ -1,7 +1,7 @@
-return { gerartyskoda = {
-  unitname            = [[gerartyskoda]],
-  name                = [[Skoda 149mm artillery]],
-  description         = [[German artillery]],
+return { brartyheavy = {
+  unitname            = [[brartyheavy]],
+  name                = [[BL 8inch Howitzer]],
+  description         = [[British Long range artillery]],
   acceleration        = 0.4,
   brakeRate           = 2.4,
   buildCostMetal      = 10,
@@ -44,8 +44,8 @@ return { gerartyskoda = {
   movementClass       = [[TANK4]],
   noAutoFire          = false,
   noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB DRONE]],
-  objectName          = [[artyskoda149.dae]],
-  script              = [[tanka7v.lua]],
+  objectName          = [[artybl8.dae]],
+  script              = [[artybl8.lua]],
   selfDestructAs      = [[BIG_UNITEX]],
 
   sfxtypes            = {

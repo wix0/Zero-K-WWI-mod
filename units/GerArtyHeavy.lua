@@ -1,7 +1,7 @@
-return { arty2 = {
-  unitname            = [[arty2]],
-  name                = [[artillery]],
-  description         = [[Long range artillery]],
+return { gerartyheavy = {
+  unitname            = [[gerartyheavy]],
+  name                = [[Big Bertha]],
+  description         = [[German heavy artillery]],
   acceleration        = 0.4,
   brakeRate           = 2.4,
   buildCostMetal      = 10,
@@ -44,7 +44,7 @@ return { arty2 = {
   movementClass       = [[TANK4]],
   noAutoFire          = false,
   noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB DRONE]],
-  objectName          = [[arty2.dae]],
+  objectName          = [[bertha.dae]],
   script              = [[tanka7v.lua]],
   selfDestructAs      = [[BIG_UNITEX]],
 
