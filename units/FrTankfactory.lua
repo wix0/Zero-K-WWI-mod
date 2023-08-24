@@ -6,10 +6,11 @@ return { frtankfactory = {
   builder                       = true,
 
   buildoptions                  = {
-    [[artillery]],
     [[frtankft]],
     [[frveharmored]],
     [[frtankchamond]],
+    [[arty2]],
+    [[arty3]],
   },
 
   buildPic                      = [[factoryveh.png]],

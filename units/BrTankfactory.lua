@@ -7,7 +7,7 @@ return { brtankfactory = {
 
   buildoptions                  = {
     [[brtankmarkiv]],
-    [[artillery]],
+    [[brartybl8]],
     [[brveharmored]],
   },
 

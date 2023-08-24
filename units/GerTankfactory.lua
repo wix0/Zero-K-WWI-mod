@@ -9,7 +9,9 @@ return { gertankfactory = {
     [[gertanka7v]],
     [[artillery]],
     [[gerveharmored]],
-    [[gervehflak]]
+    [[gervehflak]],
+    [[gerartybertha]],
+    [[gerartyskoda]]
   },
 
   buildPic                      = [[factoryveh.png]],
