@@ -1,7 +1,7 @@
-return { brinfmachinegunner = {
-  unitname            = [[brinfmachinegunner]],
-  name                = [[British Machinegunner Infantry]],
-  description         = [[British Machinegunner Infantry]],
+return { brinfsniper = {
+  unitname            = [[brinfsniper]],
+  name                = [[British Sniper Infantry]],
+  description         = [[British Sniper Infantry]],
   acceleration        = 0.3,
   --autoHeal            = 0.1,
   brakeRate           = 2.7,
@@ -12,6 +12,12 @@ return { brinfmachinegunner = {
   canGuard            = true,
   canMove             = true,
   canPatrol           = true,
+  canCloak            = true,
+  cloakCost              = 0,
+  cloakCostMoving        = 0,
+  decloakOnFire          = false,
+  initCloaked            = true,
+  minCloakDistance       = 100,
   category            = [[LAND]],
   collisionVolumeOffsets = [[0 7 0]],
   collisionVolumeScales  = [[18 28 18]],
@@ -28,7 +34,7 @@ return { brinfmachinegunner = {
     bait_level_default = 0,
     aimposoffset      = [[0 0 0]],
     midposoffset      = [[0 10 0]],
-    modelradius       = [[11]],
+    modelradius       = [[16]],
     selection_scale   = 0.35,
 
     outline_x = 0,
@@ -48,8 +54,8 @@ return { brinfmachinegunner = {
   movementClass          = [[KBOT2]],
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[britinf.dae]],
-  script              = [[InfantryRifle.lua]],
+  objectName          = [[britinfsnip.dae]],
+  script              = [[InfantrySniper.lua]],
 
   sfxtypes            = {
 
@@ -71,56 +77,70 @@ return { brinfmachinegunner = {
   upright             = true,
   workerTime          = 12,
 
-  weapons                       = {
-
-    [5] = {
-      def                = [[turretriot_WEAPON]],
+  weapons             = {
+    {
+      def                = [[GAUSS]],
+      mainDir            = [[0.0 0.1 0.3]],
+      maxAngleDif        = 150,
       badTargetCategory  = [[FIXEDWING]],
       onlyTargetCategory = [[FIXEDWING LAND SINK TURRET SHIP SWIM FLOAT GUNSHIP HOVER]],
-      mainDir            = [[0 1 0]],
-      maxAngleDif        = 240,
     },
 
   },
 
-  weaponDefs                    = {
 
-    turretriot_WEAPON = {
-      name                    = [[Heavy Machinegun]],
-      accuracy                = 500,
-      alphaDecay              = 0.7,
-      areaOfEffect            = 20,
-      avoidFeature            = false,
-      burnblow                = true,
-      craterBoost             = 0.15,
-      craterMult              = 0.3,
-      --collideFriendly         = false,
-
-      customparams = {
-        light_color = [[0.8 0.76 0.38]],
-        light_radius = 180,
-      },
+  weaponDefs          = {
+    
+    GAUSS = {
+      name                    = [[Gauss Rifle]],
+      alphaDecay              = 0.75,
+      areaOfEffect            = 1,
+      avoidfeature            = false,
+      burnblow                = false,
+      bouncerebound           = 0.15,
+      bounceslip              = 1,
+      --cegTag                  = [[gauss_tag_l]],
+      craterBoost             = 0,
+      craterMult              = 0,
 
       damage                  = {
-        default = 45,
+        default = 400,
+        planes  = 400,
+      },
+      
+      customParams = {
+        single_hit = true,
       },
 
-      edgeEffectiveness       = 0.5,
       explosionGenerator      = [[custom:EMG_HIT_HE]],
-      intensity               = 0.7,
-      interceptedByShieldType = 1,
+      --explosionGenerator      = [[custom:gauss_hit_l]],
+      groundbounce            = 1,
+      impactOnly              = true,
+      collideFriendly         = false,
+      avoidFriendly           = false,
+      impulseBoost            = 0.5,
+      impulseFactor           = 0.5,
+      interceptedByShieldType = 0,
+      noExplode               = true,
       noSelfDamage            = true,
-      range                   = 600,
-      reloadtime              = 0.1,
+      numbounce               = 3,
+      range                   = 3000,
+      reloadtime              = 6,
       rgbColor                = [[1 0.95 0.4]],
       separation              = 1.5,
-      --soundHit                = [[weapon/cannon/emg_hit]],
-      soundStart              = [[weapon/VickersSingle]],
-      soundStartVolume        = 0.5,
-      stages                  = 10,
+      size                    = 0.8,
+      sizeDecay               = -0.1,
+      --soundHit                = [[weapon/gauss_hit]],
+      soundHitVolume          = 3,
+      soundStart              = [[weapon/GBR_Enfield]],
+      soundStartVolume        = 2.5,
+      stages                  = 32,
       turret                  = true,
+      waterbounce             = 1,
       weaponType              = [[Cannon]],
-      weaponVelocity          = 1600,
+      weaponVelocity          = 2200,
     },
+
   },
+  
 } }

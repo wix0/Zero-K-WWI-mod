@@ -11,6 +11,7 @@ return { gerbarracks = {
     [[gerinfflame]],
     [[gerinfmachinegunner]],
     [[gerinfsniper]],
+    [[gerinfstorm]],
   },
 
   buildPic                      = [[factoryveh.png]],

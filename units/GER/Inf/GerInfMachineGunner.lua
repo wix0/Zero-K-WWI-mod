@@ -1,7 +1,7 @@
-return { frinfmachinegunner = {
-  unitname            = [[frinfmachinegunner]],
-  name                = [[French Machinegunner Infantry]],
-  description         = [[French Machinegunner Infantry]],
+return { gerinfmachinegunner = {
+  unitname            = [[gerinfmachinegunner]],
+  name                = [[German Machinegunner Infantry]],
+  description         = [[German Machinegunner Infantry]],
   acceleration        = 0.3,
   --autoHeal            = 0.1,
   brakeRate           = 2.7,
@@ -48,8 +48,8 @@ return { frinfmachinegunner = {
   movementClass          = [[KBOT2]],
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[frinf.dae]],
-  script              = [[InfantryRifle.lua]],
+  objectName          = [[gerinfmach.dae]],
+  script              = [[InfantryMach.lua]],
 
   sfxtypes            = {
 
@@ -73,7 +73,7 @@ return { frinfmachinegunner = {
 
   weapons                       = {
 
-    [5] = {
+   [5] = {
       def                = [[turretriot_WEAPON]],
       badTargetCategory  = [[FIXEDWING]],
       onlyTargetCategory = [[FIXEDWING LAND SINK TURRET SHIP SWIM FLOAT GUNSHIP HOVER]],
@@ -115,13 +115,12 @@ return { frinfmachinegunner = {
       rgbColor                = [[1 0.95 0.4]],
       separation              = 1.5,
       --soundHit                = [[weapon/cannon/emg_hit]],
-      soundStart              = [[weapon/MachinegunSingle]],
+      soundStart              = [[weapon/RUSMaximSingle]],
       soundStartVolume        = 0.5,
       stages                  = 10,
       turret                  = true,
       weaponType              = [[Cannon]],
       weaponVelocity          = 1600,
     },
-
   },
 } }

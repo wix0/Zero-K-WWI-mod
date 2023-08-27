@@ -32,7 +32,7 @@ return { gerinfsniper = {
     soundselect_vol = [[0.5]],
     soundbuild = [[builder_start]],
     bait_level_default = 0,
-    aimposoffset      = [[0 0 0]],
+    aimposoffset      = [[0 10 0]],
     midposoffset      = [[0 10 0]],
     modelradius       = [[16]],
     selection_scale   = 0.35,
@@ -54,8 +54,8 @@ return { gerinfsniper = {
   movementClass          = [[KBOT2]],
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[gerinf.dae]],
-  script              = [[Sniper.lua]],
+  objectName          = [[gerinfsnip.dae]],
+  script              = [[InfantrySniper.lua]],
 
   sfxtypes            = {
 

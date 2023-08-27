@@ -48,8 +48,8 @@ return { frinfmortar = {
   movementClass          = [[KBOT2]],
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[frinf.dae]],
-  script              = [[InfantryRifle.lua]],
+  objectName          = [[frinfmort.dae]],
+  script              = [[InfantryMortar.lua]],
 
   sfxtypes            = {
 

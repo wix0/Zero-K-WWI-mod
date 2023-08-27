@@ -1,7 +1,7 @@
-return { gerinfmortar = {
-  unitname            = [[gerinfmortar]],
-  name                = [[German Mortar Infantry]],
-  description         = [[German Mortar Infantry]],
+return { frinfmachinegunner = {
+  unitname            = [[frinfmachinegunner]],
+  name                = [[French Machinegunner Infantry]],
+  description         = [[French Machinegunner Infantry]],
   acceleration        = 0.3,
   --autoHeal            = 0.1,
   brakeRate           = 2.7,
@@ -48,8 +48,8 @@ return { gerinfmortar = {
   movementClass          = [[KBOT2]],
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[gerinf.dae]],
-  script              = [[InfantryRifle.lua]],
+  objectName          = [[frinfmach.dae]],
+  script              = [[InfantryMach.lua]],
 
   sfxtypes            = {
 
@@ -71,53 +71,57 @@ return { gerinfmortar = {
   upright             = true,
   workerTime          = 12,
 
-  weapons             = {
+  weapons                       = {
+
     [5] = {
-      def                = [[Mortar]],
+      def                = [[turretriot_WEAPON]],
       badTargetCategory  = [[FIXEDWING]],
       onlyTargetCategory = [[FIXEDWING LAND SINK TURRET SHIP SWIM FLOAT GUNSHIP HOVER]],
+      mainDir            = [[0 1 0]],
+      maxAngleDif        = 240,
     },
 
   },
 
+  weaponDefs                    = {
 
-  weaponDefs          = {
-    
-    Mortar = {
-      name                    = [[Mortar]],
-      accuracy                = 220,
-      areaOfEffect            = 16,
-      craterBoost             = 0,
-      craterMult              = 0,
+    turretriot_WEAPON = {
+      name                    = [[Heavy Machinegun]],
+      accuracy                = 500,
+      alphaDecay              = 0.7,
+      areaOfEffect            = 20,
+      avoidFeature            = false,
+      burnblow                = true,
+      craterBoost             = 0.15,
+      craterMult              = 0.3,
+      --collideFriendly         = false,
 
-      customParams        = {
-        light_camera_height = 1400,
-        light_color = [[0.80 0.54 0.23]],
-        light_radius = 200,
+      customparams = {
+        light_color = [[0.8 0.76 0.38]],
+        light_radius = 180,
       },
 
       damage                  = {
-        default = 140.1,
-        planes  = 140.1,
+        default = 45,
       },
 
-      edgeEffectiveness       = 0.1,
-      explosionGenerator      = [[custom:MARY_SUE]],
-      impactOnly              = true,
-      impulseBoost            = 0,
-      impulseFactor           = 0.4,
+      edgeEffectiveness       = 0.5,
+      explosionGenerator      = [[custom:EMG_HIT_HE]],
+      intensity               = 0.7,
       interceptedByShieldType = 1,
-      myGravity               = 0.09,
       noSelfDamage            = true,
-      range                   = 860,
-      reloadtime              = 6,
-      soundHit                = [[explosion/ex_med5]],
-      soundStart              = [[weapon/cannon/cannon_fire1]],
+      range                   = 600,
+      reloadtime              = 0.1,
+      rgbColor                = [[1 0.95 0.4]],
+      separation              = 1.5,
+      --soundHit                = [[weapon/cannon/emg_hit]],
+      soundStart              = [[weapon/MachinegunSingle]],
+      soundStartVolume        = 0.5,
+      stages                  = 10,
       turret                  = true,
       weaponType              = [[Cannon]],
-      weaponVelocity          = 270,
+      weaponVelocity          = 1600,
     },
 
   },
-
 } }

@@ -49,7 +49,7 @@ return { frinfflame = {
   movementClass          = [[KBOT2]],
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[frinf.dae]],
+  objectName          = [[frinfft.dae]],
   script              = [[InfantryRifle.lua]],
 
   sfxtypes            = {

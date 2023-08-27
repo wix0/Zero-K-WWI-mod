@@ -1,7 +1,7 @@
-return { brinfsniper = {
-  unitname            = [[brinfsniper]],
-  name                = [[British Sniper Infantry]],
-  description         = [[British Sniper Infantry]],
+return { gerinfmortar = {
+  unitname            = [[gerinfmortar]],
+  name                = [[German Mortar Infantry]],
+  description         = [[German Mortar Infantry]],
   acceleration        = 0.3,
   --autoHeal            = 0.1,
   brakeRate           = 2.7,
@@ -12,12 +12,6 @@ return { brinfsniper = {
   canGuard            = true,
   canMove             = true,
   canPatrol           = true,
-  canCloak            = true,
-  cloakCost              = 0,
-  cloakCostMoving        = 0,
-  decloakOnFire          = false,
-  initCloaked            = true,
-  minCloakDistance       = 100,
   category            = [[LAND]],
   collisionVolumeOffsets = [[0 7 0]],
   collisionVolumeScales  = [[18 28 18]],
@@ -32,9 +26,9 @@ return { brinfsniper = {
     soundselect_vol = [[0.5]],
     soundbuild = [[builder_start]],
     bait_level_default = 0,
-    aimposoffset      = [[0 0 0]],
+    aimposoffset      = [[0 10 0]],
     midposoffset      = [[0 10 0]],
-    modelradius       = [[16]],
+    modelradius       = [[11]],
     selection_scale   = 0.35,
 
     outline_x = 0,
@@ -54,8 +48,8 @@ return { brinfsniper = {
   movementClass          = [[KBOT2]],
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[britinf.dae]],
-  script              = [[Sniper.lua]],
+  objectName          = [[gerinfmort.dae]],
+  script              = [[InfantryMortar.lua]],
 
   sfxtypes            = {
 
@@ -78,10 +72,8 @@ return { brinfsniper = {
   workerTime          = 12,
 
   weapons             = {
-    {
-      def                = [[GAUSS]],
-      mainDir            = [[0.0 0.1 0.3]],
-      maxAngleDif        = 150,
+    [5] = {
+      def                = [[Mortar]],
       badTargetCategory  = [[FIXEDWING]],
       onlyTargetCategory = [[FIXEDWING LAND SINK TURRET SHIP SWIM FLOAT GUNSHIP HOVER]],
     },
@@ -91,56 +83,41 @@ return { brinfsniper = {
 
   weaponDefs          = {
     
-    GAUSS = {
-      name                    = [[Gauss Rifle]],
-      alphaDecay              = 0.75,
-      areaOfEffect            = 1,
-      avoidfeature            = false,
-      burnblow                = false,
-      bouncerebound           = 0.15,
-      bounceslip              = 1,
-      --cegTag                  = [[gauss_tag_l]],
+    Mortar = {
+      name                    = [[Mortar]],
+      accuracy                = 220,
+      areaOfEffect            = 16,
       craterBoost             = 0,
       craterMult              = 0,
 
-      damage                  = {
-        default = 400,
-        planes  = 400,
-      },
-      
-      customParams = {
-        single_hit = true,
+      customParams        = {
+        light_camera_height = 1400,
+        light_color = [[0.80 0.54 0.23]],
+        light_radius = 200,
       },
 
-      explosionGenerator      = [[custom:EMG_HIT_HE]],
-      --explosionGenerator      = [[custom:gauss_hit_l]],
-      groundbounce            = 1,
+      damage                  = {
+        default = 140.1,
+        planes  = 140.1,
+      },
+
+      edgeEffectiveness       = 0.1,
+      explosionGenerator      = [[custom:MARY_SUE]],
       impactOnly              = true,
-      collideFriendly         = false,
-      avoidFriendly           = false,
-      impulseBoost            = 0.5,
-      impulseFactor           = 0.5,
-      interceptedByShieldType = 0,
-      noExplode               = true,
+      impulseBoost            = 0,
+      impulseFactor           = 0.4,
+      interceptedByShieldType = 1,
+      myGravity               = 0.09,
       noSelfDamage            = true,
-      numbounce               = 3,
-      range                   = 3000,
+      range                   = 860,
       reloadtime              = 6,
-      rgbColor                = [[1 0.95 0.4]],
-      separation              = 1.5,
-      size                    = 0.8,
-      sizeDecay               = -0.1,
-      --soundHit                = [[weapon/gauss_hit]],
-      soundHitVolume          = 3,
-      soundStart              = [[weapon/GBR_Enfield]],
-      soundStartVolume        = 2.5,
-      stages                  = 32,
+      soundHit                = [[explosion/ex_med5]],
+      soundStart              = [[weapon/cannon/cannon_fire1]],
       turret                  = true,
-      waterbounce             = 1,
       weaponType              = [[Cannon]],
-      weaponVelocity          = 2200,
+      weaponVelocity          = 270,
     },
 
   },
-  
+
 } }

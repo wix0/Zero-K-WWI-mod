@@ -1,7 +1,7 @@
-return { brinfflame = {
-  unitname            = [[brinfflame]],
-  name                = [[British Flamethrower Infantry]],
-  description         = [[British Flamethrower Infantry]],
+return { gerinfflame = {
+  unitname            = [[gerinfflame]],
+  name                = [[German Flamethrower Infantry]],
+  description         = [[German Flamethrower Infantry]],
   acceleration        = 0.3,
   --autoHeal            = 0.1,
   brakeRate           = 2.7,
@@ -49,7 +49,7 @@ return { brinfflame = {
   movementClass          = [[KBOT2]],
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[britinf.dae]],
+  objectName          = [[gerinfft.dae]],
   script              = [[InfantryRifle.lua]],
 
   sfxtypes            = {
@@ -151,15 +151,15 @@ return { brinfflame = {
         cratermult              = 3.5,
 
         customparams              = {
-          setunitsonfire = "1",
-          burnchance     = "1",
-          burntime       = 60,
+            setunitsonfire = "1",
+            burnchance     = "1",
+            burntime       = 60,
 
-          area_damage = 1,
-          area_damage_radius = 64,
-          area_damage_dps = 10,
-          area_damage_duration = 10,
-      },
+            area_damage = 1,
+            area_damage_radius = 64,
+            area_damage_dps = 10,
+            area_damage_duration = 10,
+        },
 
         damage                  = {
             default = 50,

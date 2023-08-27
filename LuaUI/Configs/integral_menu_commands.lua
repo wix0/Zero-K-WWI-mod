@@ -125,6 +125,7 @@ local factoryUnitPosDef = {
 		gerinfflame           = unitTypes._1x4,
 		gerinfmachinegunner   = unitTypes._1x5,
 		gerinfsniper 		  = unitTypes._1x6,
+		gerinfstorm 		  = unitTypes._2x2,
 	},
 	frbarracks = {
 		brengineer            = unitTypes._1x1,
