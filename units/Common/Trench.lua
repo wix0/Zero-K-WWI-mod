@@ -15,7 +15,7 @@ return { trench = {
   collisionVolumeScales  = [[50 45 60]],
   collisionVolumeType    = [[box]],
   selectionVolumeOffsets = [[0 0 0]],
-  collisionVolumeScales  = [[50 45 60]],
+  selectionVolumeScales  = [[50 45 60]],
   selectionVolumeType    = [[box]],
   corpse                        = [[DEAD]],
 

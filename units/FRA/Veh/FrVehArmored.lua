@@ -62,7 +62,7 @@ return { frveharmored = {
   trackWidth          = 30,
   turninplace         = 0,
   turnRate            = 583,
-  workerTime          = 0,
+
 
   weapons                       = {
 

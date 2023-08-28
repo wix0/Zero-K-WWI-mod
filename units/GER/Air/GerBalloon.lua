@@ -45,7 +45,6 @@ return { gerballoon = {
     noChaseCategory     = [[TERRAFORM SATELLITE FIXEDWING GUNSHIP HOVER SHIP SWIM SUB LAND FLOAT SINK TURRET]],
     objectName          = [[drachen.dae]],
     script              = [[balloon.lua]],
-    releaseHeld         = true,
     selfDestructAs      = [[GUNSHIPEX]],
   
     sfxtypes            = {

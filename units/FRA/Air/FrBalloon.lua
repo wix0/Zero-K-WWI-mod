@@ -45,7 +45,6 @@ return { frballoon = {
     noChaseCategory     = [[TERRAFORM SATELLITE FIXEDWING GUNSHIP HOVER SHIP SWIM SUB LAND FLOAT SINK TURRET]],
     objectName          = [[caquot.dae]],
     script              = [[balloon.lua]],
-    releaseHeld         = true,
     selfDestructAs      = [[GUNSHIPEX]],
   
     sfxtypes            = {

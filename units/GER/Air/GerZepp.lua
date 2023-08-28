@@ -45,7 +45,6 @@ return { gerzepp = {
     noChaseCategory     = [[TERRAFORM SATELLITE FIXEDWING GUNSHIP HOVER SHIP SWIM SUB LAND FLOAT SINK TURRET]],
     objectName          = [[zepp.dae]],
     script              = [[balloon.lua]],
-    releaseHeld         = true,
     selfDestructAs      = [[GUNSHIPEX]],
   
     sfxtypes            = {

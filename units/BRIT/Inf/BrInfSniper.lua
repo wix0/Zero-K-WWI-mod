@@ -6,7 +6,6 @@ return { brinfsniper = {
   --autoHeal            = 0.1,
   brakeRate           = 2.7,
   buildCostMetal      = 10,
-  buildDistance       = 250,
   builder             = false,
   buildPic            = [[cloakraid.png]],
   canGuard            = true,
@@ -30,7 +29,6 @@ return { brinfsniper = {
   customParams        = {
     soundok_vol = [[0.58]],
     soundselect_vol = [[0.5]],
-    soundbuild = [[builder_start]],
     bait_level_default = 0,
     aimposoffset      = [[0 0 0]],
     midposoffset      = [[0 10 0]],
@@ -75,7 +73,6 @@ return { brinfsniper = {
   trackWidth             = 4,
   turnRate               = 2000,
   upright             = true,
-  workerTime          = 12,
 
   weapons             = {
     {

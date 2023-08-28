@@ -33,7 +33,7 @@ function OnStartingCrash()
 end
 
 --fetch unit id of passenger (from the load command)
-function getPassengerId()
+local function getPassengerId()
 	local cmd = Spring.GetCommandQueue(unitID, 1)
 	local unitId = nil
 	
@@ -48,7 +48,7 @@ end
 
 
 --fetch id of command
-function getCommandId()
+local function getCommandId()
 	local cmd=Spring.GetCommandQueue(unitID, 1)
 	if cmd and cmd[1] then
 		return cmd[1]['id']
@@ -56,7 +56,7 @@ function getCommandId()
 	return nil
 end
 
-function getDropPoint()
+local function getDropPoint()
 	local cmd = Spring.GetCommandQueue(unitID, 1)
 	if cmd and cmd[1] and cmd[1].id == 81 then -- CMDTYPE.LOAD_UNITS = 75
 		return cmd[1]['params'][1], cmd[1]['params'][2], cmd[1]['params'][3]
@@ -64,7 +64,7 @@ function getDropPoint()
 	return false
 end
 
-function isNearPickupPoint(passengerId, requiredDist)
+local function isNearPickupPoint(passengerId, requiredDist)
 	if passengerId == nil then
 		return false
 	end
@@ -91,7 +91,7 @@ function isNearPickupPoint(passengerId, requiredDist)
 end
 
 
-function isNearDropPoint(transportUnitId, requiredDist)
+local function isNearDropPoint(transportUnitId, requiredDist)
 	if transportUnitId == nil then
 		return false
 	end
@@ -116,7 +116,7 @@ function isNearDropPoint(transportUnitId, requiredDist)
 	end
 end
 
-function isValidCargo(soonPassenger, passenger)
+local function isValidCargo(soonPassenger, passenger)
 	return ((soonPassenger and Spring.ValidUnitID(soonPassenger)) or (passenger and Spring.ValidUnitID(passenger)))
 end
 

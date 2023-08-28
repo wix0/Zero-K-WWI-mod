@@ -65,7 +65,6 @@ return { placeholdership = {
   trackWidth          = 30,
   turninplace         = 0,
   turnRate            = 583,
-  workerTime          = 0,
   waterline              = 4,
 
   weapons             = {

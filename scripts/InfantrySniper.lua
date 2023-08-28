@@ -271,7 +271,6 @@ local function AimRifle(heading, pitch)
 end
 
 function script.AimWeapon(num, heading, pitch)
-	inBuildAnim = false
 	if num >= 5 then
 		Signal(SIG_AIM)
 		SetSignalMask(SIG_AIM)
@@ -321,7 +320,7 @@ end
 
 function script.Killed(recentDamage, maxHealth)
 	--local severity = recentDamage/maxHealth
-	dead = 1
+	dead = true
 	Turn(base, x_axis, math.rad(79), math.rad(80))
 	Turn(rloleg, x_axis, math.rad(25), math.rad(250))
 	Turn(lupleg, x_axis, math.rad(7), math.rad(250))

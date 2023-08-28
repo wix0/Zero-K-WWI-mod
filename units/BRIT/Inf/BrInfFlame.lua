@@ -70,7 +70,6 @@ return { brinfflame = {
   trackWidth             = 4,
   turnRate               = 2000,
   upright             = true,
-  workerTime          = 12,
 
   weapons             = {
     [5] = {

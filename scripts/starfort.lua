@@ -63,7 +63,6 @@ function script.AimWeapon(num, heading, pitch)
 	WaitForTurn(barrel2, x_axis)
 	WaitForTurn(barrel3, x_axis)
 	WaitForTurn(barrel4, x_axis)
-	gunHeading = heading
 	return true
 end
 

@@ -47,7 +47,7 @@ local toleranceTime = Spring.GetConfigInt('DoubleClickTime', 300) * 0.001 -- no 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
-function selectSound(soundTable)
+local function selectSound(soundTable)
 	if soundTable then
 		return soundTable[math.floor(math.random() * (#soundTable - 1) + 1.5)]
 	else

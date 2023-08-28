@@ -6,7 +6,6 @@ return { brinfmachinegunner = {
   --autoHeal            = 0.1,
   brakeRate           = 2.7,
   buildCostMetal      = 10,
-  buildDistance       = 250,
   builder             = false,
   buildPic            = [[cloakraid.png]],
   canGuard            = true,
@@ -69,7 +68,6 @@ return { brinfmachinegunner = {
   trackWidth             = 4,
   turnRate               = 2000,
   upright             = true,
-  workerTime          = 12,
 
   weapons                       = {
 

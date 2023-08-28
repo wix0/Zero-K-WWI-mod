@@ -1,0 +1,13 @@
+{
+    "Lua.diagnostics.disable": [
+        "trailing-space",
+        "undefined-global",
+        "duplicate-set-field"
+    ],
+    "luacheck.luacheck": "f:\\WDATA\\dev\\LUA\\luacheck\\",
+    "Lua.diagnostics.globals": [
+        "options_path",
+        "options_order",
+        "options"
+    ]
+}

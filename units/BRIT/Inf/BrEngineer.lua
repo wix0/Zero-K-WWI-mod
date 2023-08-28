@@ -8,7 +8,6 @@ return { brengineer = {
   buildTime              = 1,
   buildDistance          = 120,
   builder                = true,
-  showNanoSpray          = false,
   buildoptions           = {
   },
 
@@ -26,7 +25,6 @@ return { brengineer = {
   collisionVolumeType    = [[CylY]],
   selectionVolumeOffsets = [[0 7 0]],
   selectionVolumeScales  = [[18 28 18]],
-  selectionVolumeType    = [[CylY]],
   selectionVolumeType    = [[CylY]],
 
   customParams        = {
