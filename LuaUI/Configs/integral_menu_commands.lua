@@ -141,6 +141,7 @@ local factoryUnitPosDef = {
 		frtankft              = unitTypes._1x3,
 		frartylight           = unitTypes._1x4,
 		frartyheavy            = unitTypes._1x5,
+		frartyheavy2           = unitTypes._2x2,
 	},
 	gertankfactory = {
 		gerveharmored         = unitTypes._1x1,

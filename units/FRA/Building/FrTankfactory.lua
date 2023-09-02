@@ -11,6 +11,7 @@ return { frtankfactory = {
     [[frtankchamond]],
     [[frartylight]],
     [[frartyheavy]],
+    [[frartyheavy2]],
   },
 
   buildPic                      = [[factoryveh.png]],
