@@ -5,7 +5,7 @@ return { frbarracks = {
   builder                       = true,
 
   buildoptions                  = {
-  	[[brengineer]],
+  	[[frengineer]],
     [[frinfrifle]],
     [[frinfmortar]],
     [[frinfflame]],

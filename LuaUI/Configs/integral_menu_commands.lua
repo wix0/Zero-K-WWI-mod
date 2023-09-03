@@ -119,7 +119,7 @@ local factoryUnitPosDef = {
 		brinfsniper 		  = unitTypes._1x6,
 	},
 	gerbarracks = {
-		brengineer            = unitTypes._1x1,
+		gerengineer            = unitTypes._1x1,
 		gerinfrifle           = unitTypes._1x2,
 		gerinfmortar		  = unitTypes._1x3,
 		gerinfflame           = unitTypes._1x4,
@@ -128,7 +128,7 @@ local factoryUnitPosDef = {
 		gerinfstorm 		  = unitTypes._2x2,
 	},
 	frbarracks = {
-		brengineer            = unitTypes._1x1,
+		frengineer            = unitTypes._1x1,
 		frinfrifle            = unitTypes._1x2,
 		frinfmortar 		  = unitTypes._1x3,
     	frinfflame			  = unitTypes._1x4,

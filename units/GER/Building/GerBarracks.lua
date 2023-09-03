@@ -5,7 +5,7 @@ return { gerbarracks = {
   builder                       = true,
 
   buildoptions                  = {
-  	[[brengineer]],
+  	[[gerengineer]],
     [[gerinfrifle]],
     [[gerinfmortar]],
     [[gerinfflame]],

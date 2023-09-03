@@ -1,6 +1,6 @@
-return { brengineer = {
-  unitname            = [[brengineer]],
-  name                = [[British Combat Engineer]],
+return { gerengineer = {
+  unitname            = [[gerengineer]],
+  name                = [[German Combat Engineer]],
   description         = [[Builds buildings reclaims resources]],
 
   energyUse              = 0,
@@ -8,17 +8,15 @@ return { brengineer = {
   buildTime              = 1,
   buildDistance          = 120,
   builder                = true,
-
-  buildoptions                  = {
-    [[brbarracks]],
-    [[brhangar]],
-    [[brtankfactory]],
-    [[brshipfactory]],
+  buildoptions           = {
+    [[gerbarracks]],
+    [[gerhangar]],
+    [[gertankfactory]],
+    [[gershipfactory]],
     [[trench]],
     [[starfort]],
     [[pillbox]],
   },
-
 
   acceleration        = 0.3,
   --autoHeal            = 0.1,
@@ -62,7 +60,7 @@ return { brengineer = {
   movementClass          = [[KBOT2]],
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[breng.dae]],
+  objectName          = [[gerinfeng.dae]],
   script              = [[InfantryEng.lua]],
 
   showNanoSpray       = false,
