@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 3.1.0 commit date:2022-03-08, commit time:18:16, hash:c77597cd0e15</authoring_tool>
     </contributor>
-    <created>2023-08-27T22:28:57</created>
-    <modified>2023-08-27T22:28:57</modified>
+    <created>2023-08-28T20:34:01</created>
+    <modified>2023-08-28T20:34:01</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -936,10 +936,10 @@
                           </bind_material>
                         </instance_geometry>
                         <node id="flare" name="flare" type="NODE">
-                          <matrix sid="transform">1 0 0 0.3463492 0 1 0 -5.303958 0 0 1 -5.70066 0 0 0 1</matrix>
+                          <matrix sid="transform">1 0 0 0.3463492 0 -0.2690407 0.9631288 5.111022 0 -0.9631288 -0.2690407 6.220034 0 0 0 1</matrix>
                         </node>
                         <node id="eject" name="eject" type="NODE">
-                          <matrix sid="transform">1 0 0 0.5575924 0 1 0 5.095634 0 0 1 6.387096 0 0 0 1</matrix>
+                          <matrix sid="transform">1 0 0 0.5575924 0 1 0 -5.075742 0 0 1 -5.849396 0 0 0 1</matrix>
                         </node>
                       </node>
                     </node>

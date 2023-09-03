@@ -19,6 +19,7 @@ return { brinfmortar = {
   selectionVolumeScales  = [[18 28 18]],
   selectionVolumeType    = [[CylY]],
   corpse              = [[DEAD]],
+  highTrajectory                = 1,
 
   customParams        = {
     soundok_vol = [[0.58]],
@@ -72,6 +73,7 @@ return { brinfmortar = {
   weapons             = {
     [5] = {
       def                = [[Mortar]],
+      mainDir            = [[0 0 1]],
       badTargetCategory  = [[FIXEDWING]],
       onlyTargetCategory = [[FIXEDWING LAND SINK TURRET SHIP SWIM FLOAT GUNSHIP HOVER]],
     },
@@ -99,15 +101,15 @@ return { brinfmortar = {
         planes  = 140.1,
       },
 
-      edgeEffectiveness       = 0.1,
+      edgeEffectiveness       = 0.5,
       explosionGenerator      = [[custom:MARY_SUE]],
       impactOnly              = true,
       impulseBoost            = 0,
       impulseFactor           = 0.4,
       interceptedByShieldType = 1,
-      myGravity               = 0.09,
+      myGravity               = 0.16,
       noSelfDamage            = true,
-      range                   = 860,
+      range                   = 550,
       reloadtime              = 6,
       soundHit                = [[explosion/ex_med5]],
       soundStart              = [[weapon/cannon/cannon_fire1]],
