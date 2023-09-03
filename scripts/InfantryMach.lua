@@ -56,14 +56,6 @@ local crouching = false
 
 local function basePose()
 	crouching = false
-	Move(armhold, x_axis, 0.0)
-	Move(armhold, y_axis, 0.0)
-	Move(armhold, z_axis, 0.0)
-	Move(armhold2, x_axis, 0.0)
-	Move(armhold2, y_axis, 0.0)
-	Move(armhold2, z_axis, 0.0)
-	Move(base, x_axis, 0.0)
-	Move(base, y_axis, 0.0)
 	Move(base, z_axis, 0.0)
 	Move(gun, x_axis, 0.0)
 	Move(gun, y_axis, 0.0)
@@ -71,102 +63,10 @@ local function basePose()
 	Move(gunbott, x_axis, 0.0)
 	Move(gunbott, y_axis, 0.0)
 	Move(gunbott, z_axis, 0.0)
-	Move(head, x_axis, 0.0)
-	Move(head, y_axis, 0.0)
-	Move(head, z_axis, 0.0)
-	Move(head2, x_axis, 0.0)
-	Move(head2, y_axis, 0.0)
-	Move(head2, z_axis, 0.0)
-	Move(lfoot, x_axis, 0.0)
-	Move(lfoot, y_axis, 0.0)
-	Move(lfoot, z_axis, 0.0)
-	Move(lfoot2, x_axis, 0.0)
-	Move(lfoot2, y_axis, 0.0)
-	Move(lfoot2, z_axis, 0.0)
-	Move(lhand, x_axis, 0.0)
-	Move(lhand, y_axis, 0.0)
-	Move(lhand, z_axis, 0.0)
-	Move(lhand2, x_axis, 0.0)
-	Move(lhand2, y_axis, 0.0)
-	Move(lhand2, z_axis, 0.0)
-	Move(lloarm, x_axis, 0.0)
-	Move(lloarm, y_axis, 0.0)
-	Move(lloarm, z_axis, 0.0)
-	Move(lloarm2, x_axis, 0.0)
-	Move(lloarm2, y_axis, 0.0)
-	Move(lloarm2, z_axis, 0.0)
-	Move(lloleg, x_axis, 0.0)
-	Move(lloleg, y_axis, 0.0)
-	Move(lloleg, z_axis, 0.0)
-	Move(lloleg2, x_axis, 0.0)
-	Move(lloleg2, y_axis, 0.0)
-	Move(lloleg2, z_axis, 0.0)
-	Move(luparm, x_axis, 0.0)
-	Move(luparm, y_axis, 0.0)
-	Move(luparm, z_axis, 0.0)
-	Move(luparm2, x_axis, 0.0)
-	Move(luparm2, y_axis, 0.0)
-	Move(luparm2, z_axis, 0.0)
-	Move(lupleg, x_axis, 0.0)
-	Move(lupleg, y_axis, 0.0)
-	Move(lupleg, z_axis, 0.0)
-	Move(lupleg2, x_axis, 0.0)
-	Move(lupleg2, y_axis, 0.0)
-	Move(lupleg2, z_axis, 0.0)
-	Move(pelvis, x_axis, 0.0)
 	Move(pelvis, y_axis, 0.0)
-	Move(pelvis, z_axis, 0.0)
 	Move(pelvis2, x_axis, 0.0)
 	Move(pelvis2, y_axis, 0.0)
-	Move(pelvis2, z_axis, 0.0)
-	Move(rfoot, x_axis, 0.0)
-	Move(rfoot, y_axis, 0.0)
-	Move(rfoot, z_axis, 0.0)
-	Move(rfoot2, x_axis, 0.0)
-	Move(rfoot2, y_axis, 0.0)
-	Move(rfoot2, z_axis, 0.0)
-	Move(rhand, x_axis, 0.0)
-	Move(rhand, y_axis, 0.0)
-	Move(rhand, z_axis, 0.0)
-	Move(rhand2, x_axis, 0.0)
-	Move(rhand2, y_axis, 0.0)
-	Move(rhand2, z_axis, 0.0)
-	Move(rloarm, x_axis, 0.0)
-	Move(rloarm, y_axis, 0.0)
-	Move(rloarm, z_axis, 0.0)
-	Move(rloarm2, x_axis, 0.0)
-	Move(rloarm2, y_axis, 0.0)
-	Move(rloarm2, z_axis, 0.0)
-	Move(rloleg, x_axis, 0.0)
-	Move(rloleg, y_axis, 0.0)
-	Move(rloleg, z_axis, 0.0)
-	Move(rloleg2, x_axis, 0.0)
-	Move(rloleg2, y_axis, 0.0)
-	Move(rloleg2, z_axis, 0.0)
-	Move(ruparm, x_axis, 0.0)
-	Move(ruparm, y_axis, 0.0)
-	Move(ruparm, z_axis, 0.0)
-	Move(ruparm2, x_axis, 0.0)
-	Move(ruparm2, y_axis, 0.0)
-	Move(ruparm2, z_axis, 0.0)
-	Move(rupleg, x_axis, 0.0)
-	Move(rupleg, y_axis, 0.0)
-	Move(rupleg, z_axis, 0.0)
-	Move(rupleg2, x_axis, 0.0)
-	Move(rupleg2, y_axis, 0.0)
-	Move(rupleg2, z_axis, 0.0)
-	Move(torso, x_axis, 0.0)
-	Move(torso, y_axis, 0.0)
-	Move(torso, z_axis, 0.0)
-	Move(torso2, x_axis, 0.0)
-	Move(torso2, y_axis, 0.0)
-	Move(torso2, z_axis, 0.0)
-	Move(turret, x_axis, 0.0)
-	Move(turret, y_axis, 0.0)
-	Move(turret, z_axis, 0.0)
-	Move(turret2, x_axis, 0.0)
-	Move(turret2, y_axis, 0.0)
-	Move(turret2, z_axis, 0.0)
+
 
 	Turn(armhold, x_axis, 0.0)
 	Turn(armhold, y_axis, 0.0)
@@ -338,16 +238,6 @@ local function crouchPose()
 	crouching = true
 end
 
-local function RestoreAfterDelay()
-	Signal(SIG_RESTORE)
-	SetSignalMask(SIG_RESTORE)
-	Sleep(1000)
-	if not dead and not bMoving and not crouching then
-		--crouchPose()
-		bAiming = false
-	end
-end
-
 local function Run()
 	Move(pelvis, y_axis, 0, 5)
 	Turn(rloleg, x_axis, math.rad(85), math.rad(540))
@@ -418,32 +308,15 @@ function script.QueryWeapon(num)
 	return flare
 end
 
-local function AimRifle(heading, pitch)
+function script.AimWeapon(num, heading, pitch)
+	Signal(SIG_AIM)
+	SetSignalMask(SIG_AIM)
+	bAiming = true
 	--Turn(turret, z_axis, heading, math.rad(350))
 	--Turn(armhold, x_axis, -pitch, math.rad(250))
 	--WaitForTurn(turret, z_axis)
 	--WaitForTurn(armhold, x_axis)
 	return crouching
-end
-
-function script.AimWeapon(num, heading, pitch)
-	local inBuildAnim = false
-	if num >= 5 then
-		Signal(SIG_AIM)
-		SetSignalMask(SIG_AIM)
-		bAiming = true
-		return AimRifle(heading, pitch)
-	elseif num == 3 then
-		Signal(SIG_AIM)
-		Signal(SIG_AIM_2)
-		SetSignalMask(SIG_AIM_2)
-		bAiming = true
-		return AimRifle(heading, pitch)
-	elseif num == 2 or num == 4 then
-		Sleep(100)
-		return (shieldOn)
-	end
-	return false
 end
 
 function script.FireWeapon(num)
@@ -452,19 +325,6 @@ function script.FireWeapon(num)
 	elseif num == 3 then
 		EmitSfx(flare, 1026)
 	end
-	--recoil
-	--[[
-	if num ~= 4 then
-		Sleep(50)
-		Turn(gun, x_axis, math.rad(-2), math.rad(1250))
-		Sleep(250)
-		Turn(gun, x_axis, 0, math.rad(250))
-		Sleep(800)
-		if (math.random() < 0.33) then
-			Turn(armhold, x_axis, math.rad(15), math.rad(150)) --check the sexy shot
-		end
-	end
-	]]--
 end
 
 function script.Shot(num)

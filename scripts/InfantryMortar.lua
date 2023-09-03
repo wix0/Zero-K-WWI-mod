@@ -22,16 +22,8 @@ local flare = piece 'flare'
 local rhand = piece 'rhand'
 local lhand = piece 'lhand'
 
-local smokePiece = {torso}
+local SIG_AIM = 1
 
-local SIG_RESTORE = 16
-local SIG_AIM = 2
-local SIG_AIM_2 = 4
-
-local restoreHeading, restorePitch = 0, 0
-local canDgun = UnitDefs[unitDefID].canDgun
-
-local shieldOn = false
 local dead = false
 local bMoving = false
 local bAiming = false
@@ -39,10 +31,7 @@ local crouching = false
 
 local function basePose()
 	crouching = false
-	Move(base, x_axis, 0.0)
-	Move(base, y_axis, 0.0)
 	Move(base, z_axis, 0.0)
-	Move(gun, x_axis, 0.0)
 	Move(gun, y_axis, 0.0)
 	Move(gun, z_axis, 0.0)
 
@@ -124,28 +113,15 @@ local function crouchPose()
 	crouching = true
 end
 
-local function RestoreAfterDelay()
-	Signal(SIG_RESTORE)
-	SetSignalMask(SIG_RESTORE)
-	Sleep(1000)
-	if not dead and not bMoving and not crouching then
-		crouchPose()
-		bAiming = false
-	end
-end
-
 local function Run()
 	if not bAiming then
 		Turn(torso, x_axis, math.rad(12)) --tilt forward
-		--Turn(pelvis, x_axis, math.rad(-45)) --tilt forward
 	end
-	--basePose()
 	Move(pelvis, y_axis, 0, 5)
 	Turn(rloleg, x_axis, math.rad(85), math.rad(540))
 	Turn(lloleg, x_axis, math.rad(10), math.rad(630))
 	Turn(lupleg, x_axis, math.rad(30), math.rad(270))
 	Turn(rupleg, x_axis, math.rad(-60), math.rad(270))
-	--Turn(torso, y_axis, math.rad(10), math.rad(90))
 	Sleep(350)
 
 	Move(pelvis, y_axis, 0, 5)
@@ -153,7 +129,6 @@ local function Run()
 	Turn(lloleg, x_axis, math.rad(85), math.rad(540))
 	Turn(lupleg, x_axis, math.rad(-60), math.rad(270))
 	Turn(rupleg, x_axis, math.rad(30), math.rad(270))
-	--Turn(torso, y_axis, math.rad(-10), math.rad(90))
 	Sleep(350)
 
 	Move(pelvis, y_axis, 1, 5)
@@ -200,31 +175,14 @@ function script.QueryWeapon(num)
 	return flare
 end
 
-local function AimRifle(heading, pitch)
+function script.AimWeapon(num, heading, pitch)
+	Signal(SIG_AIM)
+	SetSignalMask(SIG_AIM)
+	bAiming = true
 	Turn(turret, z_axis, heading, math.rad(350))
-	--Turn(armhold, x_axis, -pitch, math.rad(250))
 	WaitForTurn(turret, z_axis)
 	WaitForTurn(armhold, x_axis)
 	return crouching
-end
-
-function script.AimWeapon(num, heading, pitch)
-	if num >= 5 then
-		Signal(SIG_AIM)
-		SetSignalMask(SIG_AIM)
-		bAiming = true
-		return AimRifle(heading, pitch)
-	elseif num == 3 then
-		Signal(SIG_AIM)
-		Signal(SIG_AIM_2)
-		SetSignalMask(SIG_AIM_2)
-		bAiming = true
-		return AimRifle(heading, pitch)
-	elseif num == 2 or num == 4 then
-		Sleep(100)
-		return (shieldOn)
-	end
-	return false
 end
 
 function script.FireWeapon(num)
@@ -233,19 +191,6 @@ function script.FireWeapon(num)
 	elseif num == 3 then
 		EmitSfx(flare, 1026)
 	end
-	--recoil
-	--[[
-	if num ~= 4 then
-		Sleep(50)
-		Turn(gun, x_axis, math.rad(-2), math.rad(1250))
-		Sleep(250)
-		Turn(gun, x_axis, 0, math.rad(250))
-		Sleep(800)
-		if (math.random() < 0.33) then
-			Turn(armhold, x_axis, math.rad(15), math.rad(150)) --check the sexy shot
-		end
-	end
-	]]--
 end
 
 function script.Shot(num)

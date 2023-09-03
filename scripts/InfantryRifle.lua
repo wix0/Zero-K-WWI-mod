@@ -21,31 +21,20 @@ local rfoot = piece 'rfoot'
 local lfoot = piece 'lfoot'
 local gun = piece 'gun'
 local flare = piece 'flare'
-local rhand = piece 'rhand'
-local lhand = piece 'lhand'
-local gunpod = piece 'gunpod'
 local ac1 = piece 'ac1'
 local ac2 = piece 'ac2'
-local nanospray = piece 'nanospray'
-
-local smokePiece = {torso}
-local nanoPieces = {nanospray}
 
 --------------------------------------------------------------------------------
 -- constants
 --------------------------------------------------------------------------------
-local SIG_RESTORE = 16
+local SIG_RESTORE = 1
 local SIG_AIM = 2
-local SIG_AIM_2 = 4
 
 --------------------------------------------------------------------------------
 -- vars
 --------------------------------------------------------------------------------
 local restoreHeading, restorePitch = 0, 0
 
-local canDgun = UnitDefs[unitDefID].canDgun
-
-local shieldOn = false
 local dead = false
 local bMoving = false
 local bAiming = false
@@ -172,130 +161,6 @@ local function Walk()
 	Sleep(350)
 
 	Move(pelvis, y_axis, 1, 5)
-end
-
-local function WalkO()
-	if not bAiming then
-		Turn(torso, x_axis, math.rad(12)) --tilt forward
-		Turn(torso, y_axis, math.rad(3.335165))
-	end
-	Move(pelvis, y_axis, 0)
-	Turn(rupleg, x_axis, math.rad(5.670330), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(-26.467033), math.rad(200))
-	Turn(lloleg, x_axis, math.rad(26.967033), math.rad(200))
-	Turn(rloleg, x_axis, math.rad(26.967033), math.rad(200))
-	Turn(rfoot, x_axis, math.rad(-19.824176), math.rad(200))
-	Sleep(60) --had to + 20 to all sleeps in walk
-	
-	if not bAiming then
-		Turn(torso, y_axis, math.rad(1.681319))
-	end
-	Turn(rupleg, x_axis, math.rad(-5.269231), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(-20.989011), math.rad(200))
-	Turn(lloleg, x_axis, math.rad(20.945055), math.rad(200))
-	Turn(rloleg, x_axis, math.rad(41.368132), math.rad(200))
-	Turn(rfoot, x_axis, math.rad(-15.747253))
-	Sleep(50)
-	
-	if not bAiming then
-		Turn(torso, y_axis, 0)
-	end
-	Turn(rupleg, x_axis, math.rad(-9.071429), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(-12.670330), math.rad(200))
-	Turn(lloleg, x_axis, math.rad(12.670330), math.rad(200))
-	Turn(rloleg, x_axis, math.rad(43.571429), math.rad(200))
-	Turn(rfoot, x_axis, math.rad(-12.016484), math.rad(200))
-	Sleep(45)
-	
-	if not bAiming then
-		Turn(torso, y_axis, math.rad(-1.77))
-	end
-	Turn(rupleg, x_axis, math.rad(-21.357143), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(2.824176), math.rad(200))
-	Turn(lloleg, x_axis, math.rad(3.560440), math.rad(200))
-	Turn(lfoot, x_axis, math.rad(-4.527473), math.rad(200))
-	Turn(rloleg, x_axis, math.rad(52.505495), math.rad(200))
-	Turn(rfoot, x_axis, 0)
-	Sleep(45)
-	
-	if not bAiming then
-		Turn(torso, y_axis, math.rad(3.15))
-	end
-	Turn(rupleg, x_axis, math.rad(-35.923077), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(7.780220), math.rad(200))
-	Turn(lloleg, x_axis, math.rad(8.203297), math.rad(200))
-	Turn(lfoot, x_axis, math.rad(-12.571429), math.rad(200))
-	Turn(rloleg, x_axis, math.rad(54.390110), math.rad(200))
-	Sleep(45)
-	
-	if not bAiming then
-		Turn(torso, y_axis, math.rad(-4.21))
-	end
-	Turn(rupleg, x_axis, math.rad(-37.780220), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(10.137363), math.rad(200))
-	Turn(lloleg, x_axis, math.rad(13.302198), math.rad(200))
-	Turn(lfoot, x_axis, math.rad(-16.714286), math.rad(200))
-	Turn(rloleg, x_axis, math.rad(32.582418), math.rad(200))
-	Sleep(45)
-	
-	if not bAiming then
-		Turn(torso, y_axis, math.rad(-3.15))
-	end
-	Turn(rupleg, x_axis, math.rad(-28.758242), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(12.247253), math.rad(200))
-	Turn(lloleg, x_axis, math.rad(19.659341), math.rad(200))
-	Turn(lfoot, x_axis, math.rad(-19.659341), math.rad(200))
-	Turn(rloleg, x_axis, math.rad(28.758242), math.rad(200))
-	Sleep(55)
-	
-	if not bAiming then
-		Turn(torso, y_axis, math.rad(-1.88))
-	end
-	Turn(rupleg, x_axis, math.rad(-22.824176), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(2.824176), math.rad(200))
-	Turn(lloleg, x_axis, math.rad(34.060440), math.rad(200))
-	Turn(rfoot, x_axis, math.rad(-6.313187), math.rad(200))
-	Sleep(55)
-	
-	if not bAiming then
-		Turn(torso, y_axis, 0)
-	end
-	Turn(rupleg, x_axis, math.rad(-11.604396), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(-6.725275), math.rad(200))
-	Turn(lloleg, x_axis, math.rad(39.401099), math.rad(200))
-	Turn(lfoot, x_axis, math.rad(-13.956044), math.rad(200))
-	Turn(rloleg, x_axis, math.rad(19.005495), math.rad(200))
-	Turn(rfoot, x_axis, math.rad(-7.615385), math.rad(200))
-	Sleep(45)
-	
-	if not bAiming then
-		Turn(torso, y_axis, math.rad(1.88))
-	end
-	Turn(rupleg, x_axis, math.rad(1.857143), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(-24.357143), math.rad(200))
-	Turn(lloleg, x_axis, math.rad(45.093407), math.rad(200))
-	Turn(lfoot, x_axis, math.rad(-7.703297), math.rad(200))
-	Turn(rloleg, x_axis, math.rad(3.560440), math.rad(200))
-	Turn(rfoot, x_axis, math.rad(-4.934066), math.rad(200))
-	Sleep(45)
-	
-	if not bAiming then
-		Turn(torso, y_axis, math.rad(3.15))
-	end
-	Turn(rupleg, x_axis, math.rad(7.148352), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(-28.181319), math.rad(200))
-	Sleep(45)
-	
-	if not bAiming then
-		Turn(torso, y_axis, math.rad(4.20))
-	end
-	Turn(rupleg, x_axis, math.rad(8.423077), math.rad(200))
-	Turn(lupleg, x_axis, math.rad(-32.060440), math.rad(200))
-	Turn(lloleg, x_axis, math.rad(27.527473), math.rad(200))
-	Turn(lfoot, x_axis, math.rad(-2.857143), math.rad(200))
-	Turn(rloleg, x_axis, math.rad(24.670330), math.rad(200))
-	Turn(rfoot, x_axis, math.rad(-33.313187), math.rad(200))
-	Sleep(55)
 end
 
 local function MotionControl()
@@ -425,22 +290,10 @@ end
 
 function script.AimWeapon(num, heading, pitch)
 	inBuildAnim = false
-	if num >= 5 then
-		Signal(SIG_AIM)
-		SetSignalMask(SIG_AIM)
-		bAiming = true
-		return AimRifle(heading, pitch)
-	elseif num == 3 then
-		Signal(SIG_AIM)
-		Signal(SIG_AIM_2)
-		SetSignalMask(SIG_AIM_2)
-		bAiming = true
-		return AimRifle(heading, pitch)
-	elseif num == 2 or num == 4 then
-		Sleep(100)
-		return (shieldOn)
-	end
-	return false
+	Signal(SIG_AIM)
+	SetSignalMask(SIG_AIM)
+	bAiming = true
+	return AimRifle(heading, pitch)
 end
 
 function script.FireWeapon(num)
@@ -449,19 +302,6 @@ function script.FireWeapon(num)
 	elseif num == 3 then
 		EmitSfx(flare, 1026)
 	end
-	--recoil
-	--[[
-	if num ~= 4 then
-		Sleep(50)
-		Turn(gun, x_axis, math.rad(-2), math.rad(1250))
-		Sleep(250)
-		Turn(gun, x_axis, 0, math.rad(250))
-		Sleep(800)
-		if (math.random() < 0.33) then
-			Turn(armhold, x_axis, math.rad(15), math.rad(150)) --check the sexy shot
-		end
-	end
-	]]--
 end
 
 function script.Shot(num)
