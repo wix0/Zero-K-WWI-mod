@@ -53,8 +53,8 @@ return { brengineer = {
   movementClass          = [[KBOT2]],
   noAutoFire             = false,
   noChaseCategory        = [[TERRAFORM FIXEDWING SUB]],
-  objectName          = [[britinf.dae]],
-  script              = [[InfantryRifle.lua]],
+  objectName          = [[breng.dae]],
+  script              = [[InfantryEng.lua]],
 
   showNanoSpray       = false,
   sightDistance          = 560,
