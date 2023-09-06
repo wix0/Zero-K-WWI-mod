@@ -45,7 +45,7 @@ return { shiptransport = {
   movementClass       = [[BOAT4]],
   noAutoFire          = false,
   noChaseCategory     = [[TERRAFORM FIXEDWING SATELLITE SUB DRONE]],
-  objectName          = [[transportship.dae]],
+  objectName          = [[transportboat.dae]],
   script              = [[tanka7v.lua]],
   selfDestructAs      = [[BIG_UNITEX]],
 
