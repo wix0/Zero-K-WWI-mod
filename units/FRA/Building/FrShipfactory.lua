@@ -6,7 +6,11 @@ return { frshipfactory = {
   builder                       = true,
 
   buildoptions                  = {
-    [[placeholdership]],
+    [[shiptransport]],
+    [[shipdestroyer]],
+    [[shipbattleship]],
+    [[shipdreadnought]],
+    [[shipuboat]], 
   },
 
   buildPic                      = [[factoryveh.png]],

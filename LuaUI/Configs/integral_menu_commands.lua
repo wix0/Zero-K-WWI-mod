@@ -171,13 +171,25 @@ local factoryUnitPosDef = {
 		zepptrans             = unitTypes._1x2,
 	},
 	brshipfactory = {
-		placeholdership        = unitTypes._1x1,
+		shiptransport        = unitTypes._1x1,
+		shipdestroyer        = unitTypes._1x2,
+		shipbattleship        = unitTypes._1x3,
+		shipdreadnought        = unitTypes._1x4,
+		shipuboat        = unitTypes._1x5,
 	},
 	gershipfactory = {
-		placeholdership        = unitTypes._1x1,
+		shiptransport        = unitTypes._1x1,
+		shipdestroyer        = unitTypes._1x2,
+		shipbattleship        = unitTypes._1x3,
+		shipdreadnought        = unitTypes._1x4,
+		shipuboat        = unitTypes._1x5,
 	},
 	frshipfactory = {
-		placeholdership        = unitTypes._1x1,
+		shiptransport        = unitTypes._1x1,
+		shipdestroyer        = unitTypes._1x2,
+		shipbattleship        = unitTypes._1x3,
+		shipdreadnought        = unitTypes._1x4,
+		shipuboat        = unitTypes._1x5,
 	},
 	factorycloak = {
 		cloakcon          = unitTypes._1x1,
