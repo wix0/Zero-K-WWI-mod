@@ -165,6 +165,7 @@ local factoryUnitPosDef = {
 		zepptrans             = unitTypes._1x2,
 		gerzepp               = unitTypes._1x3,
 		gerplanefokker        = unitTypes._1x4,
+		gerplanegothagv       = unitTypes._1x5,
 	},
 	brhangar = {
 		brballoon        = unitTypes._1x1,

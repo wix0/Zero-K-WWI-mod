@@ -10,6 +10,7 @@ return { gerhangar = {
     [[gerballoon]],
     [[zepptrans]],
     [[gerzepp]],
+    [[gerplanegothagv]],
   },
 
   buildPic                      = [[factoryveh.png]],
